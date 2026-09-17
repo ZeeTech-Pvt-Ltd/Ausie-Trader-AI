@@ -1,0 +1,17 @@
+{
+  "name": "Ausie Trader AI",
+  "short_name": "Ausie Trader AI",
+  "description": "AI-assisted crypto research for Australians — market data, charts, watchlists and learning resources in one clear workspace.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A1628",
+  "theme_color": "#0A1628",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

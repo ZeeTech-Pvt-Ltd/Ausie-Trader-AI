@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111111"/>
+      <stop offset="1" stop-color="#0D0E0F"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0369FB"/>
+      <stop offset="1" stop-color="#1868D9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1080" cy="200" r="220" fill="rgba(3,105,251,0.12)"/>
+  <circle cx="120" cy="540" r="180" fill="rgba(252,201,16,0.07)"/>
+  <rect x="70" y="70" width="80" height="80" rx="22" fill="url(#accent)"/>
+  <path d="M90 150 L128 110 L142 124 L166 96" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="166" cy="96" r="8" fill="#FCC910"/>
+  <text x="72" y="300" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="78" font-weight="800" fill="#ffffff" letter-spacing="-2">Ausie Trader AI</text>
+  <text x="72" y="378" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="40" font-weight="600" fill="#6FB2FA">AI Crypto Research for Australia</text>
+  <text x="72" y="500" font-family="Manrope, Arial, sans-serif" font-size="24" fill="#808689">Market data, charts and learning resources to research crypto with more context.</text>
+  <circle cx="1030" cy="360" r="100" fill="#FCC910"/>
+  <text x="1030" y="392" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="78" font-weight="700" fill="#0D0E0F">&#8383;</text>
+</svg>
