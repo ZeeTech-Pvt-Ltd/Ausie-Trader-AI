@@ -33,12 +33,21 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Fonts -->
+    <!-- Hero image is the LCP element: start it with the document -->
+    <link
+      rel="preload"
+      as="image"
+      type="image/webp"
+      href="/herosection-720.webp"
+      imagesrcset="/herosection-480.webp 480w, /herosection-720.webp 720w, /herosection.webp 1448w"
+      imagesizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1080px) calc(100vw - 56px), 1374px"
+      fetchpriority="high"
+    />
+
+    <!-- Fonts (self-hosted; see @font-face in main.css) -->
     <link rel="preconnect" href="https://flagcdn.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" /></noscript>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/manrope-latin.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/jakarta-latin.woff2" crossorigin />
 
     <!-- Structured data -->
     <script type="application/ld+json">
@@ -61,14 +70,35 @@
       }
     </script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLBTPP0HF3"></script>
+    <!-- Google tag (gtag.js) - queued immediately, fetched once the page is idle -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-ZLBTPP0HF3');
+
+      // Load the remote gtag library after the page is interactive so it stays
+      // out of the critical path. The dataLayer queue above is flushed on load.
+      (function () {
+        var loaded = false;
+        function loadGtag() {
+          if (loaded) return;
+          loaded = true;
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-ZLBTPP0HF3';
+          document.head.appendChild(s);
+        }
+        function schedule() {
+          if ('requestIdleCallback' in window) {
+            requestIdleCallback(loadGtag, { timeout: 3000 });
+          } else {
+            setTimeout(loadGtag, 1200);
+          }
+        }
+        if (document.readyState === 'complete') schedule();
+        else window.addEventListener('load', schedule, { once: true });
+      })();
     </script>
   </head>
   <body>

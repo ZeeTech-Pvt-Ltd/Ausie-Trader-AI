@@ -55,7 +55,7 @@ export default function Hero() {
           <img
             src="/herosection.webp"
             srcSet="/herosection-480.webp 480w, /herosection-720.webp 720w, /herosection.webp 1448w"
-            sizes="(max-width: 1080px) 100vw, 700px"
+            sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1080px) calc(100vw - 56px), 1374px"
             alt=""
             width="1448"
             height="1086"

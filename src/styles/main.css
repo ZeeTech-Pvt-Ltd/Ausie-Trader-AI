@@ -4,6 +4,24 @@
    Palette: blue #0369FB / yellow #FCC910 on white
    ============================================================ */
 
+/* ---------- Self-hosted fonts ----------
+   Served from /fonts so the critical path has no third-party round trip.
+   Both files are the variable (multi-weight) builds, latin subset only. */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url('/fonts/manrope-latin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url('/fonts/jakarta-latin.woff2') format('woff2');
+}
+
 /* ---------- Design tokens ---------- */
 :root {
   --bg: #ffffff;
@@ -194,9 +212,9 @@ p { margin: 0; }
   -webkit-mask-image: radial-gradient(75% 70% at 50% 20%, #000 30%, transparent 100%);
   mask-image: radial-gradient(75% 70% at 50% 20%, #000 30%, transparent 100%);
 }
-.hero__glow { position: absolute; border-radius: 50%; filter: blur(90px); }
-.hero__glow--1 { width: 640px; height: 640px; right: -140px; top: -160px; background: radial-gradient(circle, rgba(3,105,251,0.55), transparent 70%); }
-.hero__glow--2 { width: 540px; height: 540px; left: -180px; bottom: -180px; background: radial-gradient(circle, rgba(252,201,16,0.2), transparent 70%); }
+.hero__glow { position: absolute; border-radius: 50%; }
+.hero__glow--1 { width: 640px; height: 640px; right: -140px; top: -160px; background: radial-gradient(circle, rgba(3,105,251,0.44), rgba(3,105,251,0.14) 44%, transparent 72%); }
+.hero__glow--2 { width: 540px; height: 540px; left: -180px; bottom: -180px; background: radial-gradient(circle, rgba(252,201,16,0.17), rgba(252,201,16,0.05) 46%, transparent 74%); }
 
 .hero__inner {
   position: relative; z-index: 2;
@@ -380,7 +398,7 @@ p { margin: 0; }
 .sd-kpi span { font-size: 12.5px; color: var(--muted-on-dark); }
 .sd-kpi strong { font-family: var(--font-display); font-size: 17px; font-weight:800; }
 .sd-kpi b { font-size: 12.5px; font-weight: 700; color: var(--muted-on-dark); }
-.sd-kpi b.up { color: var(--blue-bright); }
+.sd-kpi b.up { color: #9ecbff !important; }
 
 .sd-chart { margin-bottom: 14px; }
 .sd-chart svg { width: 100%; height: 96px; }
@@ -504,7 +522,7 @@ p { margin: 0; }
 .join__card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-xl); padding: 34px; box-shadow: var(--shadow-md); }
 .join__card-head { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
 .join__card-title { font-size: 22px; font-weight: 800; }
-.join__secure { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; color: #a87e00; background: var(--light-yellow); border-radius: 999px; padding: 6px 12px; white-space: nowrap; }
+.join__secure { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; color: #6b4e00; background: var(--light-yellow); border-radius: 999px; padding: 6px 12px; white-space: nowrap; }
 .join__card-sub { color: var(--muted); font-size: 14px; margin: 8px 0 24px; }
 .join__form { display: flex; flex-direction: column; gap: 16px; }
 .join__row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
@@ -598,7 +616,7 @@ p { margin: 0; }
 .pl-ETH { background: var(--light-blue); color: var(--blue); }
 .pl-SOL { background: var(--light-blue); color: var(--blue); }
 .platform__badge { position: absolute; bottom: -18px; right: -14px; background: var(--ink); color: #fff; border-radius: 14px; padding: 12px 16px; box-shadow: var(--shadow-md); display: flex; flex-direction: column; gap: 2px; }
-.platform__badge span { font-size: 12px; color: var(--muted); }
+.platform__badge span { font-size: 12px; color: var(--muted-on-dark); }
 .platform__badge b { font-family: var(--font-display); font-size: 14px; color: var(--yellow); }
 
 /* ============================================================
@@ -657,8 +675,8 @@ p { margin: 0; }
 }
 .about-hero::after {
   content: ''; position: absolute; width: 520px; height: 520px; left: -180px; bottom: -180px;
-  border-radius: 50%; filter: blur(90px); pointer-events: none;
-  background: radial-gradient(circle, rgba(252,201,16,0.18), transparent 70%);
+  border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle, rgba(252,201,16,0.15), rgba(252,201,16,0.05) 46%, transparent 74%);
 }
 .about-hero__grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; }
 .about-hero__title { color: #fff; font-size: clamp(36px, 5.4vw, 58px); font-weight: 800; letter-spacing: -0.03em; margin: 18px 0 20px; }
@@ -726,8 +744,8 @@ p { margin: 0; }
 }
 .page-head--dark::after {
   content: ''; position: absolute; width: 480px; height: 480px; right: -160px; top: -180px;
-  border-radius: 50%; filter: blur(90px); pointer-events: none;
-  background: radial-gradient(circle, rgba(3,105,251,0.4), transparent 70%);
+  border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle, rgba(3,105,251,0.32), rgba(3,105,251,0.1) 44%, transparent 72%);
 }
 .page-head--dark .container { position: relative; z-index: 2; }
 .page-head--dark .page-head__title { color: #fff; }
@@ -787,7 +805,46 @@ p { margin: 0; }
 /* ============================================================
    REVEAL initial states (GSAP toggles)
    ============================================================ */
-[data-hero] { opacity: 0; }
+/* ============================================================
+   HERO ENTRANCE (pure CSS, runs on the compositor)
+   ============================================================ */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translate3d(0, 28px, 0); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes heroScaleIn {
+  from { transform: translate3d(0, 22px, 0) scale(0.96); }
+  to   { transform: none; }
+}
+@keyframes orbDriftA {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50%      { transform: translate3d(-14px, 22px, 0); }
+}
+@keyframes orbDriftB {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50%      { transform: translate3d(14px, -18px, 0); }
+}
+
+/* The .hero ancestor scopes these so other pages are unaffected. */
+.hero [data-hero] {
+  opacity: 0;
+  animation: heroFadeUp 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.hero [data-hero="eyebrow"] { animation-delay: 0.05s; animation-duration: 0.7s; }
+.hero [data-hero="line1"]   { animation-delay: 0.20s; animation-duration: 0.85s; }
+.hero [data-hero="line2"]   { animation-delay: 0.30s; animation-duration: 0.85s; }
+.hero [data-hero="lead"]    { animation-delay: 0.30s; }
+.hero [data-hero="cta"]     { animation-delay: 0.40s; animation-duration: 0.4s; }
+.hero [data-hero="meta"]    { animation-delay: 0.52s; animation-duration: 0.7s; }
+.hero [data-hero="cta"] > * { opacity: 0; animation: heroFadeUp 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) both; animation-delay: 0.40s; }
+.hero [data-hero="cta"] > *:nth-child(2) { animation-delay: 0.50s; }
+/* The hero visual is the LCP element, so it is never opacity-hidden: it only
+   settles into place, which keeps its paint time off the animation timeline. */
+.hero [data-hero="dash"]    { opacity: 1; animation: heroScaleIn 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) both; }
+
+.cta__orb--1 { animation: orbDriftA 6s ease-in-out infinite; }
+.cta__orb--2 { animation: orbDriftB 7s ease-in-out infinite; }
+
 html.reduced-motion [data-reveal], html.reduced-motion [data-hero] { opacity: 1 !important; }
 
 /* ============================================================
