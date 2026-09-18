@@ -9,7 +9,7 @@ export default function Showcase() {
             <Eyebrow>Inside the workspace</Eyebrow>
             <h2 className="h2" id="showcase-heading">Everything you research, in one clear view</h2>
             <p className="section-sub">
-              Market scanning, watchlists, charts and daily summaries — arranged so the important
+              Market scanning, watchlists, charts and daily summaries, arranged so the important
               stuff is always a click away.
             </p>
           </div>
@@ -27,7 +27,7 @@ export default function Showcase() {
                 <div className="sd-top">
                   <div>
                     <h3>My research workspace</h3>
-                    <p>Illustrative sample — here's your market snapshot</p>
+                    <p>Illustrative sample, here's your market snapshot</p>
                   </div>
                   <div className="sd-range">
                     <button type="button">1D</button>

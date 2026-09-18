@@ -28,7 +28,7 @@ export default function Hero() {
           </h1>
 
           <p className="hero__lead" data-hero="lead">
-            AI-assisted market scanning, clear charts and honest education — everything Australians
+            AI-assisted market scanning, clear charts and honest education, everything Australians
             need to research Bitcoin, Ethereum and 60+ other cryptocurrencies with less guesswork
             and more confidence.
           </p>

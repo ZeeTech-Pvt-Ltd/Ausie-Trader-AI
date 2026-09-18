@@ -8,7 +8,7 @@ export default function ThankYouPage() {
       <PageHeader
         center
         eyebrow="Registration received"
-        title="Thanks — you're all set!"
+        title="Thanks, you're all set!"
         sub="Your account request has been received. Keep an eye on your inbox for next steps."
       />
 
@@ -24,7 +24,7 @@ export default function ThankYouPage() {
             <ul className="thankyou__list">
               <li>Check your inbox (and spam folder) for a confirmation email.</li>
               <li>We'll set up your workspace and guide you through the basics.</li>
-              <li>No passwords or card details were requested — just basic contact info.</li>
+              <li>No passwords or card details were requested, just basic contact info.</li>
             </ul>
             <div className="thankyou__actions">
               <Link className="btn btn--primary" to="/">Back to home</Link>

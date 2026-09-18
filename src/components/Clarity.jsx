@@ -11,7 +11,7 @@ export default function Clarity() {
             <h2 className="h2" id="clarity-heading">Built for Clarity, Not Complexity</h2>
             <p>
               Financial markets are full of noise. We focus on presenting information in a way that
-              is easy to scan, simple to understand and genuinely useful for your own research —
+              is easy to scan, simple to understand and genuinely useful for your own research,
               without jargon, pressure or promises.
             </p>
             <p>

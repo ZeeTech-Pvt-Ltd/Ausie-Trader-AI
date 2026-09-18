@@ -1,5 +1,5 @@
 // Centralised content for Ausie Trader AI.
-// Written for an Australian audience — plain, human language, no hype.
+// Written for an Australian audience, plain, human language, no hype.
 
 export const NAV_LINKS = [
   { label: 'Home', to: '/' },
@@ -17,13 +17,13 @@ export const CONTACT_INFO = {
 export const WHY_POINTS = [
   { title: 'Data-driven insights', desc: 'Structured market information, presented clearly and without clutter.' },
   { title: 'Easy-to-use tools', desc: 'Analytics designed around how you actually research, day to day.' },
-  { title: 'Flexible access', desc: 'On desktop, tablet or your phone — wherever you are.' },
+  { title: 'Flexible access', desc: 'On desktop, tablet or your phone, wherever you are.' },
   { title: 'Educational resources', desc: 'Build your knowledge at a pace that suits you.' },
 ];
 
 export const SIGNUP_POINTS = [
   'Free to explore the platform',
-  'Only basic contact details needed — no passwords or card details at sign-up',
+  'Only basic contact details needed, no passwords or card details at sign-up',
   'Educational resources included from day one',
 ];
 
@@ -237,7 +237,7 @@ export const FEATURES = [
   },
   {
     title: 'Simple Interface',
-    desc: 'Find what you need without the clutter — everything you use most is a click away.',
+    desc: 'Find what you need without the clutter, everything you use most is a click away.',
     tone: 'mint',
     icon: 'grid',
     size: 'half',
@@ -322,7 +322,7 @@ export const FAQS = [
   },
   {
     q: 'Who is Ausie Trader AI designed for?',
-    a: 'Anyone in Australia who wants to research crypto markets more clearly — whether you are just starting out or already follow the market. The tools are built to be approachable for every level of experience.',
+    a: 'Anyone in Australia who wants to research crypto markets more clearly, whether you are just starting out or already follow the market. The tools are built to be approachable for every level of experience.',
   },
   {
     q: 'Is Ausie Trader AI suitable for beginners?',
@@ -330,7 +330,7 @@ export const FAQS = [
   },
   {
     q: 'What tools are available?',
-    a: 'You get market insights, charting, watchlists, daily summaries and educational content — all organised in a single workspace so you do not have to jump between exchanges, news feeds and spreadsheets.',
+    a: 'You get market insights, charting, watchlists, daily summaries and educational content, all organised in a single workspace so you do not have to jump between exchanges, news feeds and spreadsheets.',
   },
   {
     q: 'Can I access the platform on mobile?',
@@ -338,7 +338,7 @@ export const FAQS = [
   },
   {
     q: 'How does registration work?',
-    a: 'Registration is simple and secure. We only ask for your name, email address and phone number — no passwords or card details at sign-up. It takes just a few minutes.',
+    a: 'Registration is simple and secure. We only ask for your name, email address and phone number, no passwords or card details at sign-up. It takes just a few minutes.',
   },
   {
     q: 'Is financial advice provided?',

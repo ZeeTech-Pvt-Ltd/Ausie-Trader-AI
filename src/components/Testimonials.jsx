@@ -9,7 +9,7 @@ export default function Testimonials() {
           <Eyebrow>What we aim for</Eyebrow>
           <h2 className="h2" id="testimonials-heading">The experience we're building toward</h2>
           <p className="section-sub">
-            Three qualities at the heart of the platform — shown as illustrative examples, not
+            Three qualities at the heart of the platform, shown as illustrative examples, not
             real customer endorsements.
           </p>
         </div>

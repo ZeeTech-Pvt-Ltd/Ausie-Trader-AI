@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export function Logo({ light = false }) {
   const gradId = useId().replace(/:/g, '');
   return (
-    <Link className={`brand${light ? ' brand--light' : ''}`} to="/" aria-label="Ausie Trader AI — home">
+    <Link className={`brand${light ? ' brand--light' : ''}`} to="/" aria-label="Ausie Trader AI, home">
       <span className="brand__mark" aria-hidden="true">
         <svg viewBox="0 0 32 32" width="30" height="30">
           <defs>

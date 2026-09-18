@@ -32,7 +32,7 @@ export default function Steps() {
         <SectionHead
           eyebrow="How It Works"
           title="Up and running in three simple steps"
-          sub="No steep learning curve — just a clear path from sign-up to smarter research."
+          sub="No steep learning curve, just a clear path from sign-up to smarter research."
         />
 
         <div className="steps__grid">

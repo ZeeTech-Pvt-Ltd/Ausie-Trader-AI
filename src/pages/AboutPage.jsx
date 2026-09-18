@@ -19,7 +19,7 @@ const PILLARS = [
   },
   {
     title: 'Security by design',
-    desc: 'Sign-up only asks for basic contact details. No credit card, no wallet keys and no passwords — that stays between you and your providers.',
+    desc: 'Sign-up only asks for basic contact details. No credit card, no wallet keys and no passwords, that stays between you and your providers.',
   },
 ];
 
@@ -43,7 +43,7 @@ export default function AboutPage() {
               <p className="about-hero__sub">
                 Ausie Trader AI is an Australian platform that pairs AI-assisted market scanning
                 with plain-English education. We help everyday people research Bitcoin, Ethereum and
-                60+ other cryptocurrencies with clearer context — no hype, no noise, no shortcuts.
+                60+ other cryptocurrencies with clearer context, no hype, no noise, no shortcuts.
               </p>
               <ul className="about-hero__badges">
                 {BADGES.map((badge) => (
@@ -87,7 +87,7 @@ export default function AboutPage() {
               <h2 className="h2">We got tired of guessing.</h2>
               <p>
                 Ausie Trader AI started with a simple observation: most people don't have a crypto
-                problem — they have an information problem. Between jargon, hype and contradictory
+                problem, they have an information problem. Between jargon, hype and contradictory
                 advice, finding a straight answer about a digital asset can feel like a second job.
               </p>
               <p>
@@ -98,7 +98,7 @@ export default function AboutPage() {
               <ul className="about-story__bullets">
                 <li>Market scanning, alerts and guides in one calm workspace.</li>
                 <li>Built for Australians, with Australian support hours.</li>
-                <li>No advice robots, no guaranteed returns — just clearer information.</li>
+                <li>No advice robots, no guaranteed returns, just clearer information.</li>
               </ul>
             </div>
           </div>
