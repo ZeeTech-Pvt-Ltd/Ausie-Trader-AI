@@ -10,6 +10,7 @@ import FaqPage from './pages/FaqPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
 import PrivacyPage from './pages/PrivacyPage.jsx';
 import TermsPage from './pages/TermsPage.jsx';
+import RiskDisclosurePage from './pages/RiskDisclosurePage.jsx';
 import ThankYouPage from './pages/ThankYouPage.jsx';
 
 export default function App() {
@@ -77,6 +78,7 @@ export default function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
+          <Route path="/risk-disclosure" element={<RiskDisclosurePage />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
           <Route path="*" element={<HomePage />} />
         </Routes>

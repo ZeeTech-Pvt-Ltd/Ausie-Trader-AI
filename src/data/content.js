@@ -365,6 +365,7 @@ export const FOOTER_COLS = [
     links: [
       { label: 'Privacy Policy', to: '/privacy' },
       { label: 'Terms & Conditions', to: '/terms' },
+      { label: 'Risk Disclosure', to: '/risk-disclosure' },
     ],
   },
 ];
