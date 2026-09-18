@@ -17,7 +17,7 @@ export default function Footer() {
 
           {FOOTER_COLS.map((col) => (
             <div className="footer__col" key={col.heading}>
-              <h4 className="footer__heading">{col.heading}</h4>
+              <h3 className="footer__heading">{col.heading}</h3>
               {col.links.map((link) =>
                 link.to ? (
                   <Link to={link.to} key={link.label}>{link.label}</Link>
@@ -29,7 +29,7 @@ export default function Footer() {
           ))}
 
           <div className="footer__col">
-            <h4 className="footer__heading">Get in touch</h4>
+            <h3 className="footer__heading">Get in touch</h3>
             <a href={`mailto:${CONTACT_INFO.email}`}>{CONTACT_INFO.email}</a>
             <span className="footer__line">{CONTACT_INFO.location}</span>
             <span className="footer__line">{CONTACT_INFO.hours}</span>

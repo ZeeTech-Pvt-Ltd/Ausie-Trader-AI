@@ -54,6 +54,8 @@ export default function Hero() {
         <div className="hero__visual" aria-hidden="true">
           <img
             src="/herosection.webp"
+            srcSet="/herosection-480.webp 480w, /herosection-720.webp 720w, /herosection.webp 1448w"
+            sizes="(max-width: 1080px) 100vw, 700px"
             alt=""
             width="1448"
             height="1086"
