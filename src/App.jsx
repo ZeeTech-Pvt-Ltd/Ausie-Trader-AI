@@ -4,6 +4,7 @@ import gsap from 'gsap';
 
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
+import Seo from './components/Seo.jsx';
 import HomePage from './pages/HomePage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import FaqPage from './pages/FaqPage.jsx';
@@ -68,6 +69,7 @@ export default function App() {
 
   return (
     <div ref={root}>
+      <Seo path={location.pathname} />
       <a className="skip-link" href="#main">Skip to content</a>
       <Header />
       <main id="main">
