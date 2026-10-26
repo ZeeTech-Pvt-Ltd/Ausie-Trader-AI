@@ -1,4 +1,4 @@
-import PageHeader from '../components/PageHeader.jsx';
+import PageHeader from './PageHeader.jsx';
 
 export default function TermsPage() {
   return (
@@ -23,7 +23,7 @@ export default function TermsPage() {
             <h2>2. What Ausie Trader AI is</h2>
             <p>
               Ausie Trader AI is a market research and information platform. It provides market
-              data, AI-assisted analysis, charting and educational resources. It is a research and
+              data, AI assisted analysis, charting and educational resources. It is a research and
               education tool, not a brokerage, trading platform, wallet or investment service.
             </p>
 

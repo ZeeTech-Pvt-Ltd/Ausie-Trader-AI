@@ -1,4 +1,4 @@
-import { Button, Eyebrow } from '../components/ui.jsx';
+import { Button, Eyebrow } from './ui.jsx';
 
 const IMAGES = {
   hero: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80',
@@ -10,7 +10,7 @@ const BADGES = ['Made in Australia', 'No credit card to start', 'Education inclu
 
 const PILLARS = [
   {
-    title: 'AI-assisted scanning',
+    title: 'AI assisted scanning',
     desc: 'Tools that watch price action across exchanges and flag unusual moves and gaps, so you always know where to look closer.',
   },
   {
@@ -19,7 +19,7 @@ const PILLARS = [
   },
   {
     title: 'Security by design',
-    desc: 'Sign-up only asks for basic contact details. No credit card, no wallet keys and no passwords, that stays between you and your providers.',
+    desc: 'Sign up only asks for basic contact details. No credit card, no wallet keys and no passwords, that stays between you and your providers.',
   },
 ];
 
@@ -41,8 +41,8 @@ export default function AboutPage() {
               <Eyebrow light>About Us</Eyebrow>
               <h1 className="about-hero__title">Research that helps you decide, not guess.</h1>
               <p className="about-hero__sub">
-                Ausie Trader AI is an Australian platform that pairs AI-assisted market scanning
-                with plain-English education. We help everyday people research Bitcoin, Ethereum and
+                Ausie Trader AI is an Australian platform that pairs AI assisted market scanning
+                with plain English education. We help everyday people research Bitcoin, Ethereum and
                 60+ other cryptocurrencies with clearer context, no hype, no noise, no shortcuts.
               </p>
               <ul className="about-hero__badges">
@@ -51,8 +51,8 @@ export default function AboutPage() {
                 ))}
               </ul>
               <div className="about-hero__cta">
-                <Button variant="primary" size="lg" to="/contact">Create your account</Button>
-                <Button variant="ghost" size="lg" to="/">Explore the platform</Button>
+                <Button variant="primary" size="lg" href="/contact">Create your account</Button>
+                <Button variant="ghost" size="lg" href="/">Explore the platform</Button>
               </div>
             </div>
             <div className="about-hero__media" data-reveal>
@@ -61,7 +61,7 @@ export default function AboutPage() {
                 alt="Two people collaborating around a laptop at a shared table"
                 width={1200}
                 height={800}
-                fetchpriority="high"
+                fetchPriority="high"
               />
               <span className="about-hero__tag">Evidence over hype</span>
             </div>

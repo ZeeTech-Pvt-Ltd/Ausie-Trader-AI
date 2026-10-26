@@ -1,56 +1,60 @@
-# Ausie Trader AI — ausietraderai.com
+# Ausie Trader AI - ausietraderai.com
 
-A premium, modern AI crypto research platform landing page for the Australian market.
-Built with **React + Vite + GSAP**.
+An AI-assisted crypto research platform landing site for the Australian market.
+Built with **Next.js 16 (App Router)** and a static export, so every route is
+prerendered to HTML at build time.
 
 ## Stack
 
-- **React 18** — reusable component architecture
-- **Vite 5** — fast dev server and optimized production build
-- **GSAP + ScrollTrigger** — premium entrance and scroll animations
-- **Vanilla CSS** — custom design system (CSS variables, responsive, reduced-motion support)
-- **Inline SVG** — lightweight custom trading graphics (no stock imagery)
+- **Next.js 16** - App Router, `output: 'export'`
+- **React 19**
+- **Plain CSS** - one design system in `app/globals.css`, no component library
+- **next/font/local** - the two variable fonts ship from this origin
+- **Vercel** - serves the static `out/` directory
 
 ## Getting started
 
 ```bash
 npm install
-npm run dev        # start dev server
-npm run build      # production build to /dist
-npm run preview    # preview the production build
+npm run dev        # dev server on http://localhost:3000
+npm run build      # static export to /out
 ```
+
+`next start` is not used because the site is a static export. To preview the
+build, serve `out/` with any static server that maps `/about` to
+`about.html` and serves `404.html` with a real 404 status.
 
 ## Folder structure
 
 ```
-index.html              Vite entry (SEO meta, fonts, structured data)
-public/                 favicon, og-image, robots.txt, sitemap.xml, site.webmanifest
+app/
+  layout.jsx            Root shell: fonts, metadata, header/footer, JSON-LD, GA
+  globals.css           The whole design system
+  page.jsx              Home
+  <route>/page.jsx      One directory per route
+  not-found.jsx         Becomes out/404.html
 src/
-  main.jsx              React entry + reduced-motion detection
-  App.jsx               Page composition + GSAP animation orchestration
-  styles/main.css       Design system
-  data/content.js       All copy in one place (nav, features, steps, FAQs, form, footer)
-  components/
-    ui.jsx              Shared primitives (Logo, Button, Eyebrow, SectionHead, ArrowIcon)
-    Header.jsx          Sticky nav + mobile menu
-    Hero.jsx            Dark hero + floating market visual
-    Why.jsx             "Why people use" — 4 cards
-    LeadForm.jsx        Signup form (first/last name, email, phone + country code, agree)
-    Platform.jsx        "Everything you need to research crypto markets"
-    Features.jsx        Core features + stats
-    Steps.jsx           How It Works (3 steps)
-    Showcase.jsx        Dark dashboard workspace mockup
-    Clarity.jsx         "Built for clarity, not complexity"
-    Testimonials.jsx    Illustrative experience quotes
-    Faq.jsx             Accordion
-    Cta.jsx             Final call-to-action
-    Footer.jsx          Footer + disclaimer
+  components/           All UI, shared by the routes above
+  data/content.js       Copy, country list, timezone map, FAQ content
+  data/seo.js           Per-route title, description, canonical, robots rules
+  lib/metadata.js       Maps seo.js onto Next's Metadata API
+  lib/submitLead.js     Form submission, timeout, relay error parsing
+public/                 favicon, OG image, robots.txt, sitemap.xml, manifest
 ```
 
 ## Notes
 
-- GSAP animations are set up in `App.jsx` using `gsap.context()` for automatic cleanup on unmount.
-- The signup form is client-side only (validates + shows a success state); wire it to your backend/CRM when ready.
-- Content positions the platform as a **research and information tool** — no financial advice, no profit claims.
-- Respects `prefers-reduced-motion`.
-- `reference-image.webp` is the design reference provided at the start of the project; it is not used by the site.
+- **Metadata is baked in at build time.** Each page exports `metadata` from
+  `src/lib/metadata.js`; there is no runtime `<Seo />` component.
+- **`/thank-you` is noindex and carries no canonical.** The two signals are
+  contradictory, so only `robots` is set.
+- **`out/404.html` is a real 404.** There is no SPA rewrite; an unknown path
+  returns the 404 page with a 404 status.
+- **The form posts JSON, not form data.** `Content-Type: application/json` is
+  required by the relay. `offerName` is `AusieTraderAI-Site`.
+- **No third-party geolocation.** The country picker is preselected from the
+  visitor's timezone only.
+- **Analytics** (GA4 `G-ZLBTPP0HF3`) loads on idle, after the page is
+  interactive.
+- `reference-image.webp` is the original design reference; it is not used by
+  the site.

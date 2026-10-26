@@ -1,7 +1,7 @@
 {
   "name": "Ausie Trader AI",
   "short_name": "Ausie Trader AI",
-  "description": "AI-assisted crypto research for Australians — market data, charts, watchlists and learning resources in one clear workspace.",
+  "description": "AI assisted crypto research for Australians. Market data, charts, watchlists and learning resources in one clear workspace.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0A1628",

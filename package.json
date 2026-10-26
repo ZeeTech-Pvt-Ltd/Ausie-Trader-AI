@@ -1,21 +1,16 @@
 {
-  "name": "ai-pro-app",
+  "name": "ausie-trader-ai",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "description": "Aussie Trader AI — AI-powered trading insights and market analysis platform",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^7.18.4"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.4",
-    "vite": "^5.4.11"
+    "next": "^16.4.3",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   }
 }

@@ -4,7 +4,7 @@ import { SIGNUP_POINTS } from '../data/content.js';
 
 export default function LeadForm() {
   return (
-    <section className="join" id="join" aria-labelledby="join-heading">
+    <section className="join" id="register" aria-labelledby="join-heading">
       <div className="container">
         <div className="join__grid">
           <div className="join__copy" data-reveal>

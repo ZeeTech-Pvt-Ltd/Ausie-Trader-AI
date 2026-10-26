@@ -5,22 +5,9 @@
    ============================================================ */
 
 /* ---------- Self-hosted fonts ----------
-   Served from /fonts so the critical path has no third-party round trip.
-   Both files are the variable (multi-weight) builds, latin subset only. */
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 200 800;
-  font-display: swap;
-  src: url('/fonts/manrope-latin.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Plus Jakarta Sans';
-  font-style: normal;
-  font-weight: 200 800;
-  font-display: swap;
-  src: url('/fonts/jakarta-latin.woff2') format('woff2');
-}
+   Loaded through next/font/local in app/layout.jsx. The files still ship
+   from this origin, with a hashed path and a preload tag, and the generated
+   CSS variables (--font-manrope, --font-jakarta) are wired up below. */
 
 /* ---------- Design tokens ---------- */
 :root {
@@ -64,8 +51,8 @@
   --shadow-md: 0 18px 44px rgba(17, 17, 17, 0.08);
   --shadow-lg: 0 30px 70px rgba(17, 17, 17, 0.14);
 
-  --font-display: 'Plus Jakarta Sans', 'Manrope', system-ui, -apple-system, sans-serif;
-  --font-body: 'Manrope', system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-jakarta), var(--font-manrope), system-ui, -apple-system, sans-serif;
+  --font-body: var(--font-manrope), system-ui, -apple-system, sans-serif;
 
   --container: 1200px;
   --header-h: 76px;
@@ -525,6 +512,15 @@ p { margin: 0; }
 .join__secure { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; color: #6b4e00; background: var(--light-yellow); border-radius: 999px; padding: 6px 12px; white-space: nowrap; }
 .join__card-sub { color: var(--muted); font-size: 14px; margin: 8px 0 24px; }
 .join__form { display: flex; flex-direction: column; gap: 16px; }
+
+/* Honeypot: available to bots, off screen and out of the tab order for people. */
+.join__hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 .join__row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .join__field { display: flex; flex-direction: column; gap: 6px; }
 .join__field label { font-size: 14px; font-weight: 600; color: var(--ink); }
@@ -846,6 +842,67 @@ p { margin: 0; }
 .cta__orb--2 { animation: orbDriftB 7s ease-in-out infinite; }
 
 html.reduced-motion [data-reveal], html.reduced-motion [data-hero] { opacity: 1 !important; }
+
+/* ============================================================
+   TRUST STRIP
+   ============================================================ */
+.trust-strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--bg-soft); }
+.trust-strip__inner { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 14px 40px; padding: 22px 0; }
+.trust-strip__item { display: inline-flex; align-items: center; gap: 9px; font-size: 14.5px; font-weight: 600; color: var(--ink-3); }
+.trust-strip__icon { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--light-blue); color: var(--blue); flex: 0 0 auto; }
+
+/* ============================================================
+   RISK BAND (homepage, before the form)
+   ============================================================ */
+.risk-band { padding: 0; }
+.risk-band__card {
+  position: relative; overflow: hidden;
+  display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 52px; align-items: center;
+  padding: 56px;
+  border-radius: var(--radius-xl);
+  color: #fff;
+  background: radial-gradient(130% 150% at 88% -20%, #1a2c4a 0%, #0d0e0f 56%, #0d0e0f 100%);
+  box-shadow: var(--shadow-lg);
+}
+.risk-band__card::after {
+  content: ''; position: absolute; width: 260px; height: 260px; right: -70px; bottom: -110px;
+  border-radius: 50%; background: radial-gradient(circle, rgba(252,201,16,0.20), transparent 70%);
+  pointer-events: none;
+}
+.risk-band__copy { position: relative; z-index: 1; }
+.risk-band__card .h2 { color: #fff; margin: 16px 0 14px; }
+.risk-band__lead { color: rgba(255,255,255,0.76); max-width: 520px; }
+.risk-band__list { list-style: none; padding: 0; margin: 24px 0 30px; display: grid; gap: 12px; }
+.risk-band__list li { position: relative; padding-left: 30px; color: rgba(255,255,255,0.84); font-size: 15.5px; line-height: 1.55; }
+.risk-band__list li::before {
+  content: ''; position: absolute; left: 0; top: 3px; width: 18px; height: 18px; border-radius: 50%;
+  background-color: rgba(252,201,16,0.18);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 8.5l3 3 7-7' fill='none' stroke='%23F4D95B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-size: 12px; background-position: center; background-repeat: no-repeat;
+}
+.risk-band__link { border-color: rgba(255,255,255,0.34); color: #fff; }
+.risk-band__link:hover { background: rgba(255,255,255,0.10); }
+.risk-band__visual { position: relative; z-index: 1; }
+.risk-chart { padding: 22px; border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.04); }
+.risk-chart__label { display: block; margin-bottom: 16px; font-size: 12px; color: rgba(255,255,255,0.55); }
+.risk-chart svg { display: block; width: 100%; height: auto; }
+.risk-chart__legend { display: flex; justify-content: space-between; gap: 12px; margin-top: 12px; font-size: 12px; color: rgba(255,255,255,0.55); }
+.risk-chart__down { color: var(--yellow-light); text-align: right; }
+
+/* ============================================================
+   FAQ TEASER LINK
+   ============================================================ */
+.faq__more { display: flex; justify-content: center; margin-top: 28px; }
+
+@media (max-width: 900px) {
+  .risk-band__card { grid-template-columns: 1fr; gap: 34px; padding: 40px; }
+}
+
+@media (max-width: 640px) {
+  .trust-strip__inner { justify-content: flex-start; gap: 12px 22px; padding: 18px 0; }
+  .risk-band__card { padding: 30px 22px; border-radius: var(--radius-lg); }
+  .risk-chart { padding: 16px; }
+}
 
 /* ============================================================
    RESPONSIVE

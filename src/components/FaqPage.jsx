@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
-import PageHeader from '../components/PageHeader.jsx';
-import Faq from '../components/Faq.jsx';
+import Link from 'next/link';
+import PageHeader from './PageHeader.jsx';
+import Faq from './Faq.jsx';
 import { CONTACT_INFO } from '../data/content.js';
 
 export default function FaqPage() {
@@ -20,11 +20,11 @@ export default function FaqPage() {
             <h2>Can't find your answer?</h2>
             <p>
               Send us a message and our team will get back to you during Australian business hours
-              (Mon–Fri, 9am–5pm AEST). We're happy to help.
+              (Monday to Friday, 9am to 5pm AEST). We're happy to help.
             </p>
             <div className="faq-cta__actions">
               <a className="btn btn--outline" href={`mailto:${CONTACT_INFO.email}`}>Email support</a>
-              <Link className="btn btn--primary" to="/contact">Go to the contact page</Link>
+              <Link className="btn btn--primary" href="/contact">Go to the contact page</Link>
             </div>
           </div>
         </div>

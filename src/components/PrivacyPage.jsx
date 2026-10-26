@@ -1,4 +1,4 @@
-import PageHeader from '../components/PageHeader.jsx';
+import PageHeader from './PageHeader.jsx';
 
 export default function PrivacyPage() {
   return (
@@ -18,7 +18,7 @@ export default function PrivacyPage() {
             <p>
               When you register, we ask for basic contact details only: your first name, last name,
               email address and phone number. We do not ask for passwords, credit card details or
-              other sensitive financial information during sign-up.
+              other sensitive financial information during sign up.
             </p>
 
             <h2>2. How we use your information</h2>
@@ -28,26 +28,38 @@ export default function PrivacyPage() {
               requested.
             </p>
 
-            <h2>3. What we do not do</h2>
+            <h2>3. Analytics</h2>
+            <p>
+              We use Google Analytics 4 to understand how people use the site. It records which
+              pages are visited, how long people stay, the approximate location of the visit and the
+              type of device used. Your IP address is sent to Google as part of this service.
+            </p>
+            <p>
+              Google Analytics uses cookies and similar storage. We do not use advertising pixels,
+              and we do not sell this data. You can block analytics with a browser extension or your
+              browser's privacy settings.
+            </p>
+
+            <h2>4. What we do not do</h2>
             <p>
               We do not sell your personal information, and we do not use your details for purposes
               unrelated to the platform without your consent.
             </p>
 
-            <h2>4. Security</h2>
+            <h2>5. Security</h2>
             <p>
               We follow modern security and privacy practices to keep your information protected,
               and we only retain data for as long as it is reasonably needed to provide the service.
             </p>
 
-            <h2>5. Your rights</h2>
+            <h2>6. Your rights</h2>
             <p>
               You may request access to, or correction of, the personal information we hold about
               you at any time by contacting our team. We will respond during Australian business
               hours.
             </p>
 
-            <h2>6. Contact</h2>
+            <h2>7. Contact</h2>
             <p>
               Questions about this policy? Reach us at{' '}
               <a href="mailto:support@ausietraderai.com">support@ausietraderai.com</a>.

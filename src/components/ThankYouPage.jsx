@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import PageHeader from '../components/PageHeader.jsx';
+import Link from 'next/link';
+import PageHeader from './PageHeader.jsx';
 import { CONTACT_INFO } from '../data/content.js';
 
 export default function ThankYouPage() {
@@ -27,7 +27,7 @@ export default function ThankYouPage() {
               <li>No passwords or card details were requested, just basic contact info.</li>
             </ul>
             <div className="thankyou__actions">
-              <Link className="btn btn--primary" to="/">Back to home</Link>
+              <Link className="btn btn--primary" href="/">Back to home</Link>
               <a className="btn btn--outline" href={`mailto:${CONTACT_INFO.email}`}>Email support</a>
             </div>
           </div>

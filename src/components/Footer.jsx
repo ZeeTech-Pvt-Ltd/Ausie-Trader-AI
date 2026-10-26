@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import { Logo } from './ui.jsx';
+import Link from 'next/link';
+import Logo from './Logo.jsx';
 import { FOOTER_COLS, CONTACT_INFO } from '../data/content.js';
 
 export default function Footer() {
@@ -10,8 +10,8 @@ export default function Footer() {
           <div className="footer__brand">
             <Logo />
             <p className="footer__tag">
-              An Australian crypto research platform, built to help you understand digital-asset
-              markets and make more informed decisions with AI-assisted scanning, charts and education.
+              An Australian crypto research platform, built to help you understand digital asset
+              markets and make more informed decisions with AI assisted scanning, charts and education.
             </p>
           </div>
 
@@ -20,7 +20,7 @@ export default function Footer() {
               <h3 className="footer__heading">{col.heading}</h3>
               {col.links.map((link) =>
                 link.to ? (
-                  <Link to={link.to} key={link.label}>{link.label}</Link>
+                  <Link href={link.to} key={link.label}>{link.label}</Link>
                 ) : (
                   <a href={link.href} key={link.label}>{link.label}</a>
                 )

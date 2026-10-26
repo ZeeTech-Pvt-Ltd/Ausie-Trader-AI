@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
-import PageHeader from '../components/PageHeader.jsx';
-import SignupForm from '../components/SignupForm.jsx';
+import Link from 'next/link';
+import PageHeader from './PageHeader.jsx';
+import SignupForm from './SignupForm.jsx';
 import { CONTACT_INFO } from '../data/content.js';
 
 export default function ContactPage() {
@@ -37,7 +37,7 @@ export default function ContactPage() {
                 </li>
               </ul>
               <p className="contact__note">
-                If you're after a quick answer, our <Link to="/faq">FAQ page</Link> covers the most
+                If you're after a quick answer, our <Link href="/faq">FAQ page</Link> covers the most
                 common questions.
               </p>
 

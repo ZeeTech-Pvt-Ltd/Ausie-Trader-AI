@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { COUNTRIES } from '../data/content.js';
 
@@ -13,6 +15,7 @@ export default function PhoneField({
   onChange,
   placeholder,
   invalid = false,
+  required = false,
 }) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState('');
@@ -118,6 +121,7 @@ export default function PhoneField({
           value={value}
           onChange={onChange}
           aria-invalid={invalid}
+          required={required}
           className="pf__input"
         />
       </div>

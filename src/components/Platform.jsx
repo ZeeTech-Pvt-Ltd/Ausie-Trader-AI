@@ -16,8 +16,8 @@ export default function Platform() {
             <Eyebrow>The Platform</Eyebrow>
             <h2 className="h2" id="platform-heading">Everything You Need to Research Crypto Markets</h2>
             <p className="section-sub">
-              Ausie Trader AI brings crypto market data, AI-assisted analysis and charting into
-              one easy-to-use interface, so you can stop juggling scattered exchanges, news feeds
+              Ausie Trader AI brings crypto market data, AI assisted analysis and charting into
+              one easy to use interface, so you can stop juggling scattered exchanges, news feeds
               and spreadsheets.
             </p>
             <ul className="platform__list">

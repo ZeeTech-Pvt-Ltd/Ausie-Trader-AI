@@ -1,17 +1,21 @@
+'use client'
+
 import { useState } from 'react';
+import Link from 'next/link';
 import { SectionHead } from './ui.jsx';
 import { FAQS } from '../data/content.js';
 
-export default function Faq({ heading = true }) {
+export default function Faq({ heading = true, limit, moreHref }) {
   const [open, setOpen] = useState(0);
+  const items = typeof limit === 'number' ? FAQS.slice(0, limit) : FAQS;
 
   return (
-    <section className={`faq${heading ? '' : ' faq--compact'}`} id="faq" aria-labelledby="faq-heading">
+    <section className={`faq${heading ? '' : ' faq--compact'}`} id="faq" aria-label="Frequently asked questions">
       <div className="container">
         {heading && <SectionHead eyebrow="FAQ" title="Questions, Answered" />}
 
         <div className="faq__list" data-reveal>
-          {FAQS.map((item, i) => {
+          {items.map((item, i) => {
             const isOpen = open === i;
             return (
               <div className={`faq-item${isOpen ? ' open' : ''}`} key={item.q}>
@@ -31,6 +35,12 @@ export default function Faq({ heading = true }) {
             );
           })}
         </div>
+
+        {moreHref && (
+          <div className="faq__more">
+            <Link className="btn btn--outline" href={moreHref}>Read All FAQs</Link>
+          </div>
+        )}
       </div>
     </section>
   );

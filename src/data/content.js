@@ -11,19 +11,19 @@ export const NAV_LINKS = [
 export const CONTACT_INFO = {
   email: 'support@ausietraderai.com',
   location: 'Sydney, NSW, Australia',
-  hours: 'Mon–Fri, 9am–5pm AEST',
+  hours: 'Monday to Friday, 9am to 5pm AEST',
 };
 
 export const WHY_POINTS = [
-  { title: 'Data-driven insights', desc: 'Structured market information, presented clearly and without clutter.' },
-  { title: 'Easy-to-use tools', desc: 'Analytics designed around how you actually research, day to day.' },
+  { title: 'Insights from real data', desc: 'Structured market information, presented clearly and without clutter.' },
+  { title: 'Tools that are easy to use', desc: 'Analytics designed around how you actually research, day to day.' },
   { title: 'Flexible access', desc: 'On desktop, tablet or your phone, wherever you are.' },
   { title: 'Educational resources', desc: 'Build your knowledge at a pace that suits you.' },
 ];
 
 export const SIGNUP_POINTS = [
   'Free to explore the platform',
-  'Only basic contact details needed, no passwords or card details at sign-up',
+  'Only basic contact details needed, no passwords or card details at sign up',
   'Educational resources included from day one',
 ];
 
@@ -243,7 +243,7 @@ export const FEATURES = [
     size: 'half',
   },
   {
-    title: 'Real-Time Awareness',
+    title: 'Awareness in Real Time',
     desc: 'Stay up to date with market information that is refreshed regularly.',
     tone: 'blue',
     icon: 'alerts',
@@ -257,7 +257,7 @@ export const FEATURES = [
     size: 'tall',
   },
   {
-    title: 'Multi-Device Access',
+    title: 'Access on Any Device',
     desc: 'Pick up your research wherever you left off, on any screen size.',
     tone: 'blue',
     icon: 'portfolio',
@@ -318,7 +318,7 @@ export const TESTIMONIALS = [
 export const FAQS = [
   {
     q: 'What is Ausie Trader AI?',
-    a: 'Ausie Trader AI is a crypto research platform built for Australians. It combines market data, AI-assisted analysis, charting and educational resources in one place, so you can research Bitcoin, Ethereum and other digital assets with clearer context.',
+    a: 'Ausie Trader AI is a crypto research platform built for Australians. It combines market data, AI assisted analysis, charting and educational resources in one place, so you can research Bitcoin, Ethereum and other digital assets with clearer context.',
   },
   {
     q: 'Who is Ausie Trader AI designed for?',
@@ -326,7 +326,7 @@ export const FAQS = [
   },
   {
     q: 'Is Ausie Trader AI suitable for beginners?',
-    a: 'Yes. The platform is designed to be easy to use, with plain-language insights, readable charts and learning resources that help you build your understanding over time.',
+    a: 'Yes. The platform is designed to be easy to use, with plain language insights, readable charts and learning resources that help you build your understanding over time.',
   },
   {
     q: 'What tools are available?',
@@ -338,7 +338,7 @@ export const FAQS = [
   },
   {
     q: 'How does registration work?',
-    a: 'Registration is simple and secure. We only ask for your name, email address and phone number, no passwords or card details at sign-up. It takes just a few minutes.',
+    a: 'Registration is simple and secure. We only ask for your name, email address and phone number, no passwords or card details at sign up. It takes just a few minutes.',
   },
   {
     q: 'Is financial advice provided?',

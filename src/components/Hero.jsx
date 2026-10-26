@@ -1,4 +1,5 @@
 import { Button, ArrowIcon } from './ui.jsx';
+import { HeroPreload } from './PreloadResources.jsx';
 
 const META = [
   { value: '60+', label: 'Assets tracked' },
@@ -9,6 +10,8 @@ const META = [
 export default function Hero() {
   return (
     <section className="hero" id="top" aria-label="Introduction">
+      <HeroPreload />
+
       <div className="hero__bg" aria-hidden="true">
         <div className="hero__grid" />
         <div className="hero__glow hero__glow--1" />
@@ -28,7 +31,7 @@ export default function Hero() {
           </h1>
 
           <p className="hero__lead" data-hero="lead">
-            AI-assisted market scanning, clear charts and honest education, everything Australians
+            AI assisted market scanning, clear charts and honest education, everything Australians
             need to research Bitcoin, Ethereum and 60+ other cryptocurrencies with less guesswork
             and more confidence.
           </p>
@@ -60,7 +63,7 @@ export default function Hero() {
             width="1448"
             height="1086"
             loading="eager"
-            fetchpriority="high"
+            fetchPriority="high"
             data-hero="dash"
             className="hero__img"
           />
