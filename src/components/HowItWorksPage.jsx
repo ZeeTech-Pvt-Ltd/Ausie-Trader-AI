@@ -236,7 +236,6 @@ export default function HowItWorksPage() {
                   <span>You review the context and decide what to do next.</span>
                 </div>
               </div>
-              <p className="hiw-flow__note">Illustrative process, not live market data.</p>
             </div>
           </div>
         </div>

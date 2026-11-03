@@ -30,40 +30,18 @@ export default function RiskBand() {
             </Link>
           </div>
 
-          <div className="risk-band__visual" aria-hidden="true">
-            <div className="risk-chart">
-              <span className="risk-chart__label">Illustrative example, not live market data</span>
-              <svg viewBox="0 0 420 220" preserveAspectRatio="none">
-                <defs>
-                  <linearGradient id="risk-area" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0" stopColor="#6FB2FA" stopOpacity="0.26" />
-                    <stop offset="1" stopColor="#6FB2FA" stopOpacity="0" />
-                  </linearGradient>
-                </defs>
-                <g stroke="rgba(255,255,255,0.10)">
-                  <line x1="0" y1="55" x2="420" y2="55" />
-                  <line x1="0" y1="110" x2="420" y2="110" />
-                  <line x1="0" y1="165" x2="420" y2="165" />
-                </g>
-                <path
-                  d="M0,150 C40,140 60,118 100,116 C140,114 160,74 200,80 C240,86 260,152 300,162 C340,172 370,136 420,146 L420,220 L0,220 Z"
-                  fill="url(#risk-area)"
-                />
-                <path
-                  d="M0,150 C40,140 60,118 100,116 C140,114 160,74 200,80 C240,86 260,152 300,162 C340,172 370,136 420,146"
-                  fill="none"
-                  stroke="#6FB2FA"
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                />
-                <circle cx="300" cy="162" r="6" fill="#0D0E0F" stroke="#FCC910" strokeWidth="3" />
-              </svg>
-              <div className="risk-chart__legend">
-                <span>Value over time</span>
-                <span className="risk-chart__down">A fall can happen quickly</span>
-              </div>
-            </div>
-          </div>
+          <figure className="risk-band__visual risk-band__shot">
+            <img
+              src="/images/risk-understand-first-1200.webp"
+              srcSet="/images/risk-understand-first-800.webp 800w, /images/risk-understand-first-1200.webp 1200w"
+              sizes="(max-width: 900px) calc(100vw - 40px), 520px"
+              alt="Illustration of an investor reviewing market risk on a laptop"
+              width="1200"
+              height="800"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
         </div>
       </div>
     </section>
