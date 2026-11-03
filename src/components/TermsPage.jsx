@@ -12,8 +12,6 @@ export default function TermsPage() {
       <section className="legal">
         <div className="container">
           <div className="legal__body" data-reveal>
-            <p className="legal__updated">Last updated: September 2026</p>
-
             <h2>1. Acceptance</h2>
             <p>
               By registering for or using Ausie Trader AI, you agree to these terms. If you do not
@@ -24,7 +22,10 @@ export default function TermsPage() {
             <p>
               Ausie Trader AI is a market research and information platform. It provides market
               data, AI assisted analysis, charting and educational resources. It is a research and
-              education tool, not a brokerage, trading platform, wallet or investment service.
+              education tool, not a brokerage, trading platform, wallet or investment service. It
+              does not execute trades, place buy or sell orders, hold or manage funds, or run
+              automated trading strategies. You decide whether and how to act on the research and
+              information provided.
             </p>
 
             <h2>3. No financial advice</h2>

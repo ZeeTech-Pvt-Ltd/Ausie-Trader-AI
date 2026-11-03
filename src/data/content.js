@@ -344,7 +344,7 @@ export const FAQS = [
   },
   {
     q: 'Is financial advice provided?',
-    a: 'No. Ausie Trader AI provides market information, research tools and educational resources. It does not offer financial advice, place trades on your behalf, or guarantee any returns. All investing involves risk.',
+    a: 'No. Ausie Trader AI provides market information and research tools, not financial advice or trade execution. It does not hold or manage funds, run automated trading strategies or guarantee returns. All investing involves risk.',
   },
   {
     q: 'Is my information secure?',

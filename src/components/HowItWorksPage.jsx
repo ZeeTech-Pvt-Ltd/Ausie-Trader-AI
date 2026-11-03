@@ -33,7 +33,7 @@ const STAGES = [
     num: '03',
     title: 'Research at Your Own Pace',
     desc: 'Use the workspace to scan market data, read summaries and learn more about the assets you follow. Nothing trades for you.',
-    points: ['Review the information in your own time.', 'Use the learning resources when you want more context.', 'Every decision stays with you.'],
+    points: ['Review the information in your own time.', 'Use the learning resources when you want more context.', 'You decide whether and how to act on the information.'],
     icon: (
       <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M4 19V5M4 19h16" />
@@ -71,7 +71,7 @@ const PROCESS_QUESTIONS = [
   },
   {
     q: 'Do I Need to Add Funds?',
-    a: "No. Ausie Trader AI is a research platform, not a brokerage. We don't ask for card details or wallet keys.",
+    a: "No. Ausie Trader AI is a research platform, not a brokerage. We don't ask for card details or wallet keys, and we don't hold or manage funds.",
   },
   {
     q: 'Do I Need Trading Experience?',
@@ -79,7 +79,7 @@ const PROCESS_QUESTIONS = [
   },
   {
     q: 'Does the AI Trade for Me?',
-    a: 'No. It scans market data and helps you read it. Every decision stays with you.',
+    a: 'No. It provides research, analysis and insights. You decide whether and how to trade.',
   },
 ];
 
@@ -173,7 +173,9 @@ export default function HowItWorksPage() {
               <h2 className="h2" id="hiw-ai-heading">It Scans the Market. You Make the Call.</h2>
               <p className="section-sub">
                 The platform scans market data and puts the changes worth noticing in front of you.
-                It doesn't decide for you, and it doesn't place trades.
+                It provides research, analysis and insights, not trade execution. It doesn't decide
+                for you, doesn't place trades or move money, and you decide whether and how to act
+                on what you read.
               </p>
 
               <div className="hiw-ai__split">
@@ -188,7 +190,7 @@ export default function HowItWorksPage() {
                 <div>
                   <h3>What It Doesn't Do</h3>
                   <ul className="hiw-ai__list hiw-ai__list--no">
-                    <li>It doesn't place trades or move money.</li>
+                    <li>It doesn't place trades, move money or hold funds.</li>
                     <li>It doesn't give personal financial advice.</li>
                     <li>It doesn't promise returns.</li>
                   </ul>

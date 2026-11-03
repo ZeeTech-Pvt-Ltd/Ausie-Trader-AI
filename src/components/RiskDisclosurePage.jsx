@@ -12,8 +12,6 @@ export default function RiskDisclosurePage() {
       <section className="legal">
         <div className="container">
           <div className="legal__body" data-reveal>
-            <p className="legal__updated">Last updated: September 2026</p>
-
             <h2>1. General risk warning</h2>
             <p>
               Trading and investing in digital assets involves significant risk. The value of
@@ -27,7 +25,9 @@ export default function RiskDisclosurePage() {
               Ausie Trader AI is a research and information platform. Nothing on this website is
               intended as personal financial advice, and we do not provide personal financial product
               advice under the Corporations Act 2001 (Cth). All information is general in nature and
-              may not suit your individual circumstances.
+              may not suit your individual circumstances. AI assisted research and insights are
+              informational only. They do not guarantee results or replace personal financial advice,
+              and the platform does not execute trades or manage funds.
             </p>
 
             <h2>3. No guarantees</h2>

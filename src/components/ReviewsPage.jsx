@@ -7,7 +7,7 @@ import { CONTACT_INFO } from '../data/content.js';
 const REVIEWS = [
   {
     quote:
-      'I had never used anything automated before and I expected to be lost in the settings. Each one explains what it does before you change it, so my first afternoon was far less intimidating than I had braced for.',
+      'I had never used a research workspace like this before and I expected to be lost in the settings. Each one explains what it does before you change it, so my first afternoon was far less intimidating than I had braced for.',
     name: 'Priya N.',
     city: 'Melbourne',
     rating: 5,
@@ -15,7 +15,7 @@ const REVIEWS = [
   },
   {
     quote:
-      'I work office hours, so the thing that sold me was being able to pause it. Knowing I can stop everything in one step is what made me comfortable leaving it running overnight.',
+      'I work office hours, so the thing that sold me was being able to step away from my research and come back to it. Knowing I can pick up where I left off is what made it fit around my day.',
     name: 'Daniel R.',
     city: 'Brisbane',
     rating: 4.5,
@@ -23,7 +23,7 @@ const REVIEWS = [
   },
   {
     quote:
-      'The part I use most is the record of what it did and what it passed on. I have learned more from reading that than from any explainer video I sat through beforehand.',
+      'The part I use most is the daily summary and the context around what changed. I have learned more from reading that than from any explainer video I sat through beforehand.',
     name: 'Megan T.',
     city: 'Perth',
     rating: 4,
@@ -130,7 +130,7 @@ export default function ReviewsPage() {
               <SectionHead
                 eyebrow="What People Say"
                 title="In Their Own Words"
-                sub="What people told us about the workspace, the records and the support they received."
+                sub="What people told us about the workspace, the research and the support they received."
               />
             </div>
             <div className="reviews-list__slider">
