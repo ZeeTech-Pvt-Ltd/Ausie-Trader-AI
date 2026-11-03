@@ -55,8 +55,9 @@ public/                 favicon, OG image, robots.txt, sitemap.xml, manifest
 - **No third-party geolocation.** The country picker is preselected from the
   visitor's timezone only.
 - **`/how-it-works` and `/reviews` are additional routes.** The Reviews page
-  shows the five operator-supplied reviews. New reviews, ratings or customer
-  counts should only be added when they are real and permission-cleared.
+  shows the five operator-supplied reviews in a slider, with avatar images and
+  star ratings. New reviews, ratings or customer counts should only be added
+  when they are real and permission-cleared.
 - **Platform and Showcase use the operator's WebP renders** in
   `public/images/`. The original PNGs are kept in `design-assets/`, which is
   gitignored because it is not deployed.

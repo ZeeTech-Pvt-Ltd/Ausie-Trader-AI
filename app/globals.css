@@ -903,7 +903,7 @@ html.reduced-motion [data-reveal], html.reduced-motion [data-hero] { opacity: 1 
 /* ============================================================
    HOW IT WORKS - WHAT YOU NEED
    ============================================================ */
-.start-kit { padding: 0; }
+.start-kit { padding: 108px 0; }
 .start-kit__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
 .start-kit__copy .h2 { margin: 16px 0 18px; }
 .start-kit__list { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 16px; }
@@ -927,6 +927,59 @@ html.reduced-motion [data-reveal], html.reduced-motion [data-hero] { opacity: 1 
 .setup-note { margin: 18px 0 0; font-size: 12.5px; color: var(--muted); }
 
 /* ============================================================
+   HOW IT WORKS - STAGES
+   ============================================================ */
+.hiw-stages { padding: 108px 0 0; }
+.hiw-stages__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.hiw-stage { display: flex; flex-direction: column; gap: 14px; padding: 30px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
+.hiw-stage__head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.hiw-stage__num { font-family: var(--font-display); font-weight: 800; font-size: 14px; letter-spacing: 0.08em; color: var(--blue); }
+.hiw-stage__visual { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 14px; background: var(--light-blue); color: var(--blue); }
+.hiw-stage__title { font-size: 20px; font-weight: 800; }
+.hiw-stage__desc { color: var(--muted); font-size: 15px; }
+.hiw-stage__list { list-style: none; padding: 0; margin: auto 0 0; display: grid; gap: 8px; }
+.hiw-stage__list li { position: relative; padding-left: 22px; color: var(--ink-3); font-size: 14px; }
+.hiw-stage__list li::before { content: ''; position: absolute; left: 0; top: 6px; width: 8px; height: 8px; border-radius: 50%; background: var(--blue); }
+
+/* ============================================================
+   HOW IT WORKS - AI
+   ============================================================ */
+.hiw-ai { padding: 108px 0; background: var(--bg-soft); }
+.hiw-ai__grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 60px; align-items: center; }
+.hiw-ai__copy .h2 { margin: 16px 0 18px; }
+.hiw-ai__split { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 28px; }
+.hiw-ai__split h3 { font-size: 16px; font-weight: 800; margin-bottom: 10px; }
+.hiw-ai__list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.hiw-ai__list li { position: relative; padding-left: 22px; color: var(--ink-3); font-size: 14.5px; line-height: 1.5; }
+.hiw-ai__list li::before { content: ''; position: absolute; left: 0; top: 7px; width: 8px; height: 8px; border-radius: 50%; background: var(--blue); }
+.hiw-ai__list--no li::before { background: transparent; border: 1.5px solid var(--muted); }
+.hiw-flow { padding: 26px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); }
+.hiw-flow__step { display: flex; align-items: center; gap: 14px; padding: 16px 18px; border-radius: var(--radius-md); background: var(--bg-soft); border: 1px solid var(--line); }
+.hiw-flow__icon { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: var(--light-blue); color: var(--blue); flex: 0 0 auto; }
+.hiw-flow__step b { display: block; font-family: var(--font-display); font-size: 15px; color: var(--ink); }
+.hiw-flow__step div > span { display: block; margin-top: 2px; font-size: 12.5px; color: var(--muted); }
+.hiw-flow__arrow { display: block; margin: 8px auto; color: var(--muted); font-size: 16px; line-height: 1; text-align: center; }
+.hiw-flow__note { margin: 16px 0 0; font-size: 12px; color: var(--muted); }
+
+/* ============================================================
+   HOW IT WORKS - QUESTIONS
+   ============================================================ */
+.hiw-questions { padding: 108px 0; }
+.hiw-questions__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.hiw-question { padding: 24px 26px; background: var(--bg-soft); border: 1px solid var(--line); border-radius: var(--radius-md); }
+.hiw-question h3 { font-size: 18px; font-weight: 800; margin-bottom: 8px; }
+.hiw-question p { color: var(--muted); font-size: 15px; }
+
+/* ============================================================
+   HOW IT WORKS - CLOSING CTA
+   ============================================================ */
+.hiw-cta__card { background: linear-gradient(140deg, #0369fb 0%, #1868d9 55%, #0d0e0f 135%); border-radius: var(--radius-xl); padding: 72px 40px; text-align: center; color: #fff; box-shadow: var(--shadow-lg); }
+.hiw-cta__title { color: #fff; font-size: clamp(30px, 4.4vw, 48px); font-weight: 800; letter-spacing: -0.03em; }
+.hiw-cta__lead { max-width: 540px; margin: 18px auto 30px; color: rgba(255,255,255,0.84); }
+.hiw-cta__actions { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+.hiw-cta__note { margin-top: 22px; color: rgba(255,255,255,0.6); font-size: 13.5px; }
+
+/* ============================================================
    OPERATOR SUPPLIED SECTION RENDERS
    ============================================================ */
 .platform__shot, .showcase__shot { margin: 0; }
@@ -937,18 +990,32 @@ html.reduced-motion [data-reveal], html.reduced-motion [data-hero] { opacity: 1 
 }
 
 /* ============================================================
-   REVIEWS - QUOTES
+   REVIEWS - SLIDER
    ============================================================ */
 .reviews-list { padding: 108px 0 0; }
-.reviews-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
-.review-card { display: flex; flex-direction: column; gap: 22px; padding: 30px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
-.review-card blockquote { margin: 0; color: var(--ink-3); font-size: 16px; line-height: 1.65; }
-.review-card blockquote::before { content: '“'; display: block; margin-bottom: 10px; font-family: var(--font-display); font-size: 42px; font-weight: 800; line-height: 0.6; color: var(--blue); }
-.review-card figcaption { display: flex; align-items: center; gap: 12px; margin-top: auto; }
-.review-card__avatar { flex: 0 0 auto; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--light-blue); color: var(--blue-deep); font-family: var(--font-display); font-weight: 800; font-size: 13px; }
-.review-card__meta b { display: block; font-family: var(--font-display); font-size: 14.5px; color: var(--ink); }
-.review-card__meta span { display: block; font-size: 12.5px; color: var(--muted); }
-.review-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.reviews-list__grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 60px; align-items: center; }
+.reviews-list__copy, .reviews-list__slider { min-width: 0; }
+.reviews-list__copy .section-head { margin-bottom: 0; }
+.slider { width: 100%; min-width: 0; }
+.slider__viewport { overflow: hidden; padding: 6px 8px; }
+.slider__track { display: flex; transition: transform .45s cubic-bezier(.22,.61,.36,1); }
+.slider__slide { flex: 0 0 100%; min-width: 0; padding: 4px; display: flex; }
+.review-slide { flex: 1; display: flex; flex-direction: column; gap: 20px; padding: 38px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); }
+.stars { display: inline-flex; gap: 4px; font-size: 18px; line-height: 1; color: var(--yellow-deep); }
+.star { position: relative; display: inline-block; }
+.star--empty, .star--half { color: var(--line-strong); }
+.star--half::before { content: '★'; position: absolute; left: 0; top: 0; width: 50%; overflow: hidden; color: var(--yellow-deep); }
+.review-slide blockquote { margin: 0; color: var(--ink-3); font-size: 19px; line-height: 1.6; }
+.review-slide__who { display: flex; align-items: center; gap: 12px; margin-top: auto; }
+.review-slide__avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; object-position: center top; border: 1px solid var(--line); }
+.review-slide__who b { display: block; font-family: var(--font-display); font-size: 15px; color: var(--ink); }
+.review-slide__who span { display: block; font-size: 12.5px; color: var(--muted); }
+.slider__controls { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 24px; }
+.slider__arrow { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); cursor: pointer; transition: color .2s ease, border-color .2s ease, background .2s ease; }
+.slider__arrow:hover { color: var(--blue); border-color: var(--blue); background: var(--light-blue); }
+.slider__dots { display: flex; align-items: center; gap: 8px; }
+.slider__dot { width: 8px; height: 8px; padding: 0; border: 0; border-radius: 999px; background: var(--line-strong); cursor: pointer; transition: width .2s ease, background .2s ease; }
+.slider__dot.is-active { width: 24px; background: var(--blue); }
 
 /* ============================================================
    REVIEWS - DUE DILIGENCE CHECKS
@@ -972,7 +1039,10 @@ html.reduced-motion [data-reveal], html.reduced-motion [data-hero] { opacity: 1 
 @media (max-width: 900px) {
   .risk-band__card { grid-template-columns: 1fr; gap: 34px; padding: 40px; }
   .start-kit__grid { grid-template-columns: 1fr; gap: 40px; }
-  .checks__grid, .review-questions__grid, .reviews-grid { grid-template-columns: 1fr; }
+  .checks__grid, .review-questions__grid { grid-template-columns: 1fr; }
+  .hiw-stages__grid, .hiw-questions__grid { grid-template-columns: 1fr; }
+  .hiw-ai__grid { grid-template-columns: 1fr; gap: 40px; }
+  .reviews-list__grid { grid-template-columns: 1fr; gap: 36px; }
 }
 
 @media (max-width: 640px) {
@@ -981,10 +1051,20 @@ html.reduced-motion [data-reveal], html.reduced-motion [data-hero] { opacity: 1 
   .risk-chart { padding: 16px; }
   .start-kit__card { padding: 20px; }
   .reviews-list { padding-top: 72px; }
-  .review-card { padding: 24px 22px; }
+  .reviews-list__grid { gap: 28px; }
+  .review-slide { padding: 24px 22px; }
+  .review-slide blockquote { font-size: 17px; }
+  .slider__arrow { width: 40px; height: 40px; }
   .checks, .review-questions { padding: 72px 0; }
   .check-card { padding: 24px 22px 24px 66px; }
   .check-card__num { left: 20px; top: 24px; }
+  .hiw-stages { padding-top: 72px; }
+  .start-kit { padding: 72px 0; }
+  .hiw-ai, .hiw-questions { padding: 72px 0; }
+  .hiw-ai__split { grid-template-columns: 1fr; }
+  .hiw-flow { padding: 18px; }
+  .hiw-cta__card { padding: 48px 24px; }
+  .hiw-cta__actions .btn { width: 100%; }
 }
 
 /* ============================================================

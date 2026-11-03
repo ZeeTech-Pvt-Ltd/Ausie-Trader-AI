@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import PageHeader from './PageHeader.jsx';
 import { SectionHead } from './ui.jsx';
+import ReviewsSlider from './ReviewsSlider.jsx';
 import { CONTACT_INFO } from '../data/content.js';
 
 const REVIEWS = [
@@ -9,35 +10,40 @@ const REVIEWS = [
       'I had never used anything automated before and I expected to be lost in the settings. Each one explains what it does before you change it, so my first afternoon was far less intimidating than I had braced for.',
     name: 'Priya N.',
     city: 'Melbourne',
-    initials: 'PN',
+    rating: 5,
+    avatar: '/images/review-avatar-1.jpg',
   },
   {
     quote:
       'I work office hours, so the thing that sold me was being able to pause it. Knowing I can stop everything in one step is what made me comfortable leaving it running overnight.',
     name: 'Daniel R.',
     city: 'Brisbane',
-    initials: 'DR',
+    rating: 4.5,
+    avatar: '/images/review-avatar-2.jpg',
   },
   {
     quote:
       'The part I use most is the record of what it did and what it passed on. I have learned more from reading that than from any explainer video I sat through beforehand.',
     name: 'Megan T.',
     city: 'Perth',
-    initials: 'MT',
+    rating: 4,
+    avatar: '/images/review-avatar-3.jpg',
   },
   {
     quote:
       'I asked a fairly basic question through the contact form and got a straight answer back rather than a sales push. That is rarer in this space than it ought to be.',
     name: 'Sam K.',
     city: 'Adelaide',
-    initials: 'SK',
+    rating: 4.5,
+    avatar: '/images/review-avatar-4.jpg',
   },
   {
     quote:
       'What made me take it seriously was being told upfront that I could lose money. Everywhere else I looked was promising me the opposite, which is exactly why I did not trust any of them.',
     name: 'Laura B.',
     city: 'Sydney',
-    initials: 'LB',
+    rating: 5,
+    avatar: '/images/review-avatar-5.jpg',
   },
 ];
 
@@ -119,24 +125,17 @@ export default function ReviewsPage() {
 
       <section className="reviews-list" aria-label="In Their Own Words">
         <div className="container">
-          <SectionHead
-            eyebrow="Reviews"
-            title="In Their Own Words"
-            sub="What people told us about the workspace, the records and the support they received."
-          />
-          <div className="reviews-grid">
-            {REVIEWS.map((review) => (
-              <figure className="review-card" data-reveal key={review.name}>
-                <blockquote>{review.quote}</blockquote>
-                <figcaption>
-                  <span className="review-card__avatar" aria-hidden="true">{review.initials}</span>
-                  <span className="review-card__meta">
-                    <b>{review.name}</b>
-                    <span>{review.city}</span>
-                  </span>
-                </figcaption>
-              </figure>
-            ))}
+          <div className="reviews-list__grid">
+            <div className="reviews-list__copy">
+              <SectionHead
+                eyebrow="What People Say"
+                title="In Their Own Words"
+                sub="What people told us about the workspace, the records and the support they received."
+              />
+            </div>
+            <div className="reviews-list__slider">
+              <ReviewsSlider reviews={REVIEWS} />
+            </div>
           </div>
         </div>
       </section>
