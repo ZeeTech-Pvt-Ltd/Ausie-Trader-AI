@@ -25,15 +25,17 @@ const VISUALS = {
   ),
 };
 
-export default function Steps() {
+export default function Steps({ heading = true }) {
   return (
-    <section className="steps" id="how-it-works" aria-labelledby="steps-heading">
+    <section className="steps" id="how-it-works" aria-label="How It Works">
       <div className="container">
-        <SectionHead
-          eyebrow="How It Works"
-          title="Up and running in three simple steps"
-          sub="No steep learning curve, just a clear path from sign up to smarter research."
-        />
+        {heading && (
+          <SectionHead
+            eyebrow="How It Works"
+            title="Up and running in three simple steps"
+            sub="No steep learning curve, just a clear path from sign up to smarter research."
+          />
+        )}
 
         <div className="steps__grid">
           {STEPS.map((step, i) => (

@@ -54,6 +54,12 @@ public/                 favicon, OG image, robots.txt, sitemap.xml, manifest
   required by the relay. `offerName` is `AusieTraderAI-Site`.
 - **No third-party geolocation.** The country picker is preselected from the
   visitor's timezone only.
+- **`/how-it-works` and `/reviews` are additional routes.** The Reviews page
+  shows the five operator-supplied reviews. New reviews, ratings or customer
+  counts should only be added when they are real and permission-cleared.
+- **Platform and Showcase use the operator's WebP renders** in
+  `public/images/`. The original PNGs are kept in `design-assets/`, which is
+  gitignored because it is not deployed.
 - **Analytics** (GA4 `G-ZLBTPP0HF3`) loads on idle, after the page is
   interactive.
 - `reference-image.webp` is the original design reference; it is not used by

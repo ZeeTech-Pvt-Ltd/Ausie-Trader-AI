@@ -7,6 +7,9 @@ out
 dist
 dist-ssr
 
+# original design renders (the site ships the WebP versions in public/images)
+design-assets
+
 # logs
 *.log
 npm-debug.log*

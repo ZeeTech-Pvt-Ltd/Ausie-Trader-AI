@@ -9,7 +9,7 @@ import { NAV_LINKS } from '../data/content.js'
 
 // These pages open with a dark hero, so the header starts transparent and
 // only picks up its solid background once the page is scrolled.
-const DARK_HERO_ROUTES = ['/', '/about', '/faq', '/contact']
+const DARK_HERO_ROUTES = ['/', '/about', '/faq', '/contact', '/how-it-works', '/reviews']
 
 export default function Header() {
   const pathname = (usePathname() || '/').replace(/\/+$/, '') || '/'

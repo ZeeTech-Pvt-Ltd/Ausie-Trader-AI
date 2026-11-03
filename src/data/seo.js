@@ -20,6 +20,16 @@ export const SEO = {
     description: 'See how Ausie Trader AI pairs AI assisted market scanning with plain English crypto education for Australians. Read our story today.',
     canonical: `${SITE_URL}/about`,
   },
+  '/how-it-works': {
+    title: 'How It Works | Ausie Trader AI',
+    description: 'See how Ausie Trader AI takes you from sign up to clearer crypto research in three simple steps. Start exploring today.',
+    canonical: `${SITE_URL}/how-it-works`,
+  },
+  '/reviews': {
+    title: 'Reviews | Ausie Trader AI',
+    description: 'Read reviews from Ausie Trader AI users, plus practical checks for any trading platform before you sign up. Get in touch today.',
+    canonical: `${SITE_URL}/reviews`,
+  },
   '/faq': {
     title: 'FAQ | Ausie Trader AI',
     description: 'Answers to common questions about Ausie Trader AI, who it is for, how registration works and how we protect your details. Find your answer now.',

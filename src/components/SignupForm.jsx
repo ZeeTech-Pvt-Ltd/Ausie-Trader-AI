@@ -30,7 +30,7 @@ export default function SignupForm() {
     email: '',
     iso: DEFAULT_ISO,
     phone: '',
-    agree: false,
+    agree: true,
     // Honeypot: bots fill every field they find. People never reach it.
     company: '',
   })

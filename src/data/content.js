@@ -3,6 +3,8 @@
 
 export const NAV_LINKS = [
   { label: 'Home', to: '/' },
+  { label: 'How It Works', to: '/how-it-works' },
+  { label: 'Reviews', to: '/reviews' },
   { label: 'About Us', to: '/about' },
   { label: 'FAQ', to: '/faq' },
   { label: 'Contact', to: '/contact' },
@@ -355,6 +357,8 @@ export const FOOTER_COLS = [
     heading: 'Explore',
     links: [
       { label: 'Home', to: '/' },
+      { label: 'How It Works', to: '/how-it-works' },
+      { label: 'Reviews', to: '/reviews' },
       { label: 'About Us', to: '/about' },
       { label: 'FAQ', to: '/faq' },
       { label: 'Contact', to: '/contact' },

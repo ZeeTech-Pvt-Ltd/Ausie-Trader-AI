@@ -8,6 +8,7 @@ export default function FaqPage() {
     <>
       <PageHeader
         dark
+        center
         eyebrow="Help centre"
         title="Frequently asked questions"
         sub="Straight answers about Ausie Trader AI: what the platform is, who it's for, how registration works and how we look after your information."
