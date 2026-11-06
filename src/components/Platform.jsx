@@ -10,10 +10,9 @@ export default function Platform() {
             <Eyebrow>The Platform</Eyebrow>
             <h2 className="h2" id="platform-heading">What Is Trader AI?</h2>
             <p className="section-sub">
-              Trader AI is a research workspace for market study. It brings charts, watchlists,
-              strategy testing and paper trading into one place. It does not place trades, hold
-              funds, run automated strategies or act as a broker, exchange, wallet or investment
-              service.
+              Trader AI supports both manual and automated trading options, allowing users to
+              choose their preferred trading approach. Trader AI provides flexible trading tools and
+              AI powered insights to help users make informed trading decisions.
             </p>
             <ul className="platform__list">
               {PLATFORM_POINTS.map((point) => (
