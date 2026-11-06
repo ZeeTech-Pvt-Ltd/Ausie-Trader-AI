@@ -10,8 +10,7 @@ export default function Footer() {
           <div className="footer__brand">
             <Logo />
             <p className="footer__tag">
-              A global AI powered trading analysis platform, built to help you understand markets,
-              test strategies and practice in one workspace.
+              Research tools for market study.
             </p>
           </div>
 
@@ -42,14 +41,13 @@ export default function Footer() {
           <p>
             Risk warning: Trading and investing involve risk. Information provided on this website
             is general in nature and does not constitute personal financial advice. Consider your
-            circumstances and seek professional advice where appropriate. Trader AI does not
-            provide personal financial product advice under the Corporations Act 2001 (Cth).
+            circumstances and seek professional advice where appropriate.
           </p>
         </div>
 
         <div className="footer__bottom">
           <span>© 2026 Trader AI. All rights reserved.</span>
-          <span>AI Powered Trading Analysis</span>
+          <span>AI Powered Market Research</span>
         </div>
       </div>
     </footer>

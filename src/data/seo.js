@@ -7,14 +7,14 @@
 
 export const SITE_URL = 'https://ausietraderai.com';
 // The version query forces social crawlers to fetch the current artwork
-// instead of serving a cached copy of the old "Australia" OG image.
+// instead of serving a cached copy of the previous OG image.
 export const OG_IMAGE = `${SITE_URL}/og-image.png?v=2`;
 
 export const SEO = {
   '/': {
     title: 'Trader AI | AI Powered Trading Analysis Platform',
-    description: 'Trader AI brings AI powered trading tools, chart analysis, strategy backtesting and paper trading together in one platform. Start exploring today.',
-    keywords: 'Trader AI, AI trading analysis, trading tools, strategy backtesting, paper trading, market insights',
+    description: 'Trader AI is a research workspace for AI assisted market analysis, strategy backtesting and virtual paper trading. Start exploring today.',
+    keywords: 'Trader AI, AI market analysis, market research tools, strategy backtesting, paper trading, market insights',
     canonical: `${SITE_URL}/`,
   },
   '/about': {

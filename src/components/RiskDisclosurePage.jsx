@@ -24,10 +24,10 @@ export default function RiskDisclosurePage() {
             <p>
               Trader AI is a research and information platform. Nothing on this website is
               intended as personal financial advice, and we do not provide personal financial product
-              advice under the Corporations Act 2001 (Cth). All information is general in nature and
-              may not suit your individual circumstances. AI assisted research and insights are
-              informational only. They do not guarantee results or replace personal financial advice,
-              and the platform does not execute trades or manage funds.
+              advice. All information is general in nature and may not suit your individual
+              circumstances. AI assisted research and insights are informational only. They do not
+              guarantee results or replace personal financial advice, and the platform does not
+              execute trades or manage funds.
             </p>
 
             <h2>3. No guarantees</h2>

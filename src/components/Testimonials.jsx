@@ -11,7 +11,7 @@ export default function Testimonials() {
             <SectionHead
               eyebrow="Reviews"
               title="What Traders Say"
-              sub="What users told us about the trading workspace, the research tools and the support they received."
+              sub="What users told us about the research workspace, the tools and the support they received."
             />
           </div>
           <div className="reviews-list__slider">

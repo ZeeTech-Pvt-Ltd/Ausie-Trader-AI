@@ -7,15 +7,11 @@ export default function Clarity() {
       <div className="container">
         <div className="clarity__grid">
           <div className="clarity__copy" data-reveal>
-            <Eyebrow>Trust and Safety</Eyebrow>
+            <Eyebrow>Your Account</Eyebrow>
             <h2 className="h2" id="security-heading">Security & Trust</h2>
             <p>
-              We keep the platform transparent about what it does. Your account details are handled
-              with care, and our privacy policy explains what we collect and how it is used.
-            </p>
-            <p>
-              No platform can remove market risk. The tools support your research, testing and
-              practice; they do not promise outcomes.
+              Your account is simple by design. We collect the details needed to create and support
+              your workspace, and the privacy policy explains how they are handled.
             </p>
           </div>
 

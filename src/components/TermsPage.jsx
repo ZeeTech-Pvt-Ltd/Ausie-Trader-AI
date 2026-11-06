@@ -21,19 +21,17 @@ export default function TermsPage() {
             <h2>2. What Trader AI is</h2>
             <p>
               Trader AI is a market research and information platform. It provides market
-              data, AI assisted analysis, charting and educational resources. It is a research and
-              education tool, not a brokerage, trading platform, wallet or investment service. It
-              does not execute trades, place buy or sell orders, hold or manage funds, or run
-              automated trading strategies. You decide whether and how to act on the research and
-              information provided.
+              data, AI assisted analysis, charting and educational resources. It is not a brokerage,
+              trading platform, wallet or investment service. It does not execute trades, place buy
+              or sell orders, hold or manage funds, or run automated trading strategies. You decide
+              whether and how to act on the research and information provided.
             </p>
 
             <h2>3. No financial advice</h2>
             <p>
               Information on the platform is general in nature and does not constitute personal
-              financial advice. Trader AI does not provide personal financial product advice
-              under the Corporations Act 2001 (Cth). You should consider your own circumstances and
-              seek professional advice where appropriate.
+              financial advice. Trader AI does not provide personal financial product advice. You
+              should consider your own circumstances and seek professional advice where appropriate.
             </p>
 
             <h2>4. Risk</h2>

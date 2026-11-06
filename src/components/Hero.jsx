@@ -2,9 +2,9 @@ import { Button, ArrowIcon } from './ui.jsx';
 import { HeroPreload } from './PreloadResources.jsx';
 
 const META = [
-  { value: '60+', label: 'Assets Tracked' },
-  { value: '24/7', label: 'Access' },
-  { value: '6+', label: 'Core Tools' },
+  { value: 'Global', label: 'Audience' },
+  { value: 'Research', label: 'Focused' },
+  { value: 'You', label: 'In Control' },
 ];
 
 export default function Hero() {
@@ -36,7 +36,7 @@ export default function Hero() {
           </p>
 
           <div className="hero__cta" data-hero="cta">
-            <Button variant="primary" size="lg" href="#register">Get Started</Button>
+            <Button variant="primary" size="lg" href="#register">Start Researching</Button>
             <Button variant="ghost" size="lg" href="#features">
               Explore Features
               <ArrowIcon />

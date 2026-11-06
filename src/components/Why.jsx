@@ -6,10 +6,11 @@ export default function Why() {
     <section className="why" aria-labelledby="why-heading">
       <div className="container">
         <div className="section-head" data-reveal>
-          <Eyebrow>Why Trader AI</Eyebrow>
+          <Eyebrow>The Approach</Eyebrow>
           <h2 className="h2" id="why-heading">Why Choose Trader AI?</h2>
           <p className="section-sub">
-            Tools that support your research, testing and practice, without promising outcomes.
+            A research workspace should be clear about what it does and what it leaves to you.
+            These are the principles behind Trader AI.
           </p>
         </div>
 

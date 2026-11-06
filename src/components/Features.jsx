@@ -55,11 +55,11 @@ export default function Features() {
         <div className="section-head section-head--split" data-reveal>
           <div>
             <Eyebrow>Research Toolkit</Eyebrow>
-            <h2 className="h2" id="features-heading">Powerful Trading Features</h2>
+            <h2 className="h2" id="features-heading">The Tools In Your Workspace</h2>
           </div>
           <p className="section-sub">
-            Six tools, each built for a specific research job. Use them together or open the one
-            you need.
+            Each tool has a specific job, from reading a chart to testing an idea. Open the one you
+            need or move through the full research flow.
           </p>
         </div>
 
@@ -91,8 +91,8 @@ export default function Features() {
           ))}
         </div>
         <p className="features__note">
-          Figures describe the platform itself rather than trading outcomes. Market results vary
-          and are never guaranteed.
+          These figures describe the platform, not trading outcomes. Market results vary and are
+          never guaranteed.
         </p>
       </div>
     </section>

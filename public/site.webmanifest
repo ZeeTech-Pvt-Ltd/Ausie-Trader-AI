@@ -1,7 +1,7 @@
 {
   "name": "Trader AI",
   "short_name": "Trader AI",
-  "description": "AI powered trading analysis tools, strategy backtesting, paper trading and market insights in one platform.",
+  "description": "Research tools for AI assisted market analysis, strategy backtesting and virtual paper trading.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0A1628",

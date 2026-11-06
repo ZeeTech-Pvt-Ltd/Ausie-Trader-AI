@@ -145,8 +145,7 @@ export default function SignupForm() {
         </span>
       </div>
       <p className="join__card-sub">
-        We only ask for basic contact details to begin. Fields marked{' '}
-        <span className="req">*</span> are required.
+        Fields marked <span className="req">*</span> are required.
       </p>
 
       <form className="join__form" onSubmit={onSubmit} noValidate>
@@ -234,12 +233,11 @@ export default function SignupForm() {
         )}
 
         <button type="submit" disabled={status === 'submitting'} className="btn btn--primary join__submit">
-          {status === 'submitting' ? 'Creating your account…' : 'Get Started'}
+          {status === 'submitting' ? 'Creating your account…' : 'Create My Account'}
         </button>
 
         <p className="join__fine">
-          By registering you confirm you are aged 18 or over. We never ask for credit card
-          details or passwords during sign up.
+          By registering you confirm you are aged 18 or over.
         </p>
       </form>
     </div>

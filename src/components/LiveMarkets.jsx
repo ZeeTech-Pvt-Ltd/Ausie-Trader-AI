@@ -90,7 +90,7 @@ export default function LiveMarkets() {
             ? 'Live Reference Prices'
             : status === 'error'
               ? 'Live Prices Unavailable'
-              : 'Connecting to Live Prices'}
+              : 'Loading Live Prices'}
         </span>
         <span className="showcase__live-source">
           {status === 'ready' && updatedAt
@@ -101,8 +101,7 @@ export default function LiveMarkets() {
 
       {status === 'error' ? (
         <p className="showcase__live-error">
-          Live prices are unavailable right now. The workspace preview still shows how the platform
-          looks.
+          Live prices are unavailable right now. Please try again later.
         </p>
       ) : (
         <ul className="showcase__live-list">
@@ -133,8 +132,7 @@ export default function LiveMarkets() {
       )}
 
       <p className="showcase__live-note">
-        Reference prices only. Not a trading signal or financial advice. The workspace image is
-        illustrative demo data.
+        Reference prices only. Not a trading signal or financial advice.
       </p>
     </div>
   )

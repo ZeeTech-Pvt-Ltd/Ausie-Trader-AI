@@ -10,10 +10,10 @@ export default function Platform() {
             <Eyebrow>The Platform</Eyebrow>
             <h2 className="h2" id="platform-heading">What Is Trader AI?</h2>
             <p className="section-sub">
-              Trader AI is a research workspace for people who follow crypto markets. The
-              watchlist, chart panel, strategy tester and paper trading mode share one screen, so
-              you can move from a hunch to a tested idea. The preview shown here is illustrative
-              demo data, not a live market feed.
+              Trader AI is a research workspace for market study. It brings charts, watchlists,
+              strategy testing and paper trading into one place. It does not place trades, hold
+              funds, run automated strategies or act as a broker, exchange, wallet or investment
+              service.
             </p>
             <ul className="platform__list">
               {PLATFORM_POINTS.map((point) => (
@@ -21,7 +21,7 @@ export default function Platform() {
               ))}
             </ul>
             <a href="#features" className="text-link">
-              Explore the features
+              See how the tools fit together
               <ArrowIcon />
             </a>
           </div>
@@ -31,7 +31,7 @@ export default function Platform() {
               src="/images/platform-watchlist-1200.webp"
               srcSet="/images/platform-watchlist-800.webp 800w, /images/platform-watchlist-1200.webp 1200w"
               sizes="(max-width: 900px) calc(100vw - 40px), 560px"
-              alt="Watchlist with a market chart and Bitcoin, Ethereum and Solana rows"
+              alt="Workspace preview with a watchlist, market chart and Bitcoin, Ethereum and Solana rows"
               width="1200"
               height="800"
               loading="lazy"

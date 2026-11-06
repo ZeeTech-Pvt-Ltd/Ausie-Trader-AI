@@ -51,7 +51,6 @@ export default function ReviewsSlider({ reviews }) {
                   />
                   <div>
                     <b>{review.name}</b>
-                    <span>{review.city}</span>
                   </div>
                 </div>
               </article>

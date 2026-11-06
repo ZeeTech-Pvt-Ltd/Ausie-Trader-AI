@@ -10,8 +10,8 @@ export default function Showcase() {
             <Eyebrow>Market Workspace</Eyebrow>
             <h2 className="h2" id="showcase-heading">Live Market Data</h2>
             <p className="section-sub">
-              Live reference prices for four major assets, refreshed when you load the page. The
-              workspace image is illustrative demo data, not a live trading account.
+              Reference prices from CoinGecko for four major assets, refreshed when you load the
+              page.
             </p>
           </div>
 

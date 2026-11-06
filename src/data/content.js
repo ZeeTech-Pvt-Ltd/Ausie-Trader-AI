@@ -13,20 +13,20 @@ export const NAV_LINKS = [
 export const CONTACT_INFO = {
   email: 'support@ausietraderai.com',
   location: 'Global',
-  hours: 'Monday to Friday, 9am to 5pm AEST',
+  hours: 'Monday to Friday, 9am to 5pm UTC+10',
 };
 
 export const WHY_POINTS = [
-  { title: 'AI Assisted Analysis', desc: 'Use AI assisted chart analysis and market insights to understand price action and market conditions.' },
-  { title: 'Multiple Research Tools', desc: 'Backtesting, paper trading, market heatmaps and monitoring tools in one workspace.' },
-  { title: 'Risk Aware Preparation', desc: 'Test ideas on historical data and practice with virtual funds before risking real money.' },
-  { title: 'Market Monitoring', desc: 'Follow the assets you care about with watchlists and customizable alerts.' },
+  { title: 'Research First', desc: 'The workspace is built for study, not for pushing you toward a trade.' },
+  { title: 'Clear Context', desc: 'Information is presented with enough context to review on your own terms.' },
+  { title: 'Your Pace', desc: 'Start with the tools you need and build a research routine that fits your schedule.' },
+  { title: 'Less Switching', desc: 'Charts, watchlists and tests sit together, so you spend less time moving between tabs.' },
 ];
 
 export const SIGNUP_POINTS = [
-  'Free to explore the platform',
-  'Only basic contact details needed, no passwords or card details at sign up',
-  'Trading analysis tools and learning resources included',
+  'Free to explore the platform.',
+  'All research tools and learning resources are included.',
+  'No card details are needed to begin.',
 ];
 
 export const DEFAULT_ISO = 'AU';
@@ -224,50 +224,50 @@ export const TIMEZONE_TO_ISO = {
 };
 
 export const PLATFORM_POINTS = [
-  'Market research and chart analysis in one place.',
-  'Strategy testing and simulated trading tools.',
-  'Market monitoring, heatmaps and customizable alerts.',
+  'One workspace for charts, watchlists and market research.',
+  'Tools that explain what they do before you use them.',
+  'A research flow from chart to test to practice.',
 ];
 
 export const FEATURES = [
   {
     title: 'Strategy Backtester',
-    desc: 'Test trading strategies against historical market data. Evaluate performance, analyze results and understand potential risks.',
+    desc: 'Run a trading idea against historical price data. Review how it would have performed and what risks it carried.',
     tone: 'blue',
     icon: 'monitor',
     size: 'wide',
   },
   {
     title: 'Paper Trading',
-    desc: 'Practice trading with virtual funds and simulated orders without risking real money.',
+    desc: 'Place simulated orders with virtual funds and review the results without risking real money.',
     tone: 'mint',
     icon: 'portfolio',
     size: 'half',
   },
   {
     title: 'AI Chart Analysis',
-    desc: 'Use AI assisted chart analysis to identify patterns, technical indicators, trends and important price levels.',
+    desc: 'Scan a chart for patterns, indicators, trends and key price levels. The output gives you a starting point for your own analysis.',
     tone: 'blue',
     icon: 'ai',
     size: 'half',
   },
   {
     title: 'Market Heatmap',
-    desc: 'Visualize market movements and identify assets showing different levels of market activity.',
+    desc: 'See how activity is spread across the market at a glance. Spot areas that may deserve a closer look.',
     tone: 'mint',
     icon: 'grid',
     size: 'tall',
   },
   {
     title: 'Smart Price & Indicator Alerts',
-    desc: 'Monitor selected price levels and technical indicators through customizable alerts.',
+    desc: 'Set alerts for the price levels and indicators you follow. Return to your research when a condition is met.',
     tone: 'blue',
     icon: 'alerts',
     size: 'wide',
   },
   {
     title: 'AI Market Analysis',
-    desc: 'Explore AI assisted market insights, technical trends and relevant market information.',
+    desc: 'Explore AI assisted insights into market conditions, technical trends and relevant market information. Use them to decide what deserves a closer look.',
     tone: 'mint',
     icon: 'insights',
     size: 'half',
@@ -276,39 +276,39 @@ export const FEATURES = [
 
 export const STATS = [
   { value: '24/7', label: 'Access' },
-  { value: '60+', label: 'Markets tracked' },
-  { value: '6+', label: 'Core tools' },
-  { value: '1', label: 'Unified platform' },
+  { value: '60+', label: 'Markets Tracked' },
+  { value: '6+', label: 'Core Tools' },
+  { value: '1', label: 'Unified Platform' },
 ];
 
 export const STEPS = [
   {
     num: '01',
     title: 'Create Your Account',
-    desc: 'Complete the simple registration with your basic contact details. It only takes a few minutes.',
+    desc: 'Register with your basic contact details. It takes a few minutes.',
     visual: 'explore',
   },
   {
     num: '02',
-    title: 'Explore Trading Tools',
-    desc: 'Browse chart analysis, paper trading, strategy testing, market heatmaps and alerts from one workspace.',
+    title: 'Set Up Your Workspace',
+    desc: 'Choose the assets you follow and arrange the workspace around the research you do most.',
     visual: 'review',
   },
   {
     num: '03',
-    title: 'Analyze, Test & Practice',
-    desc: 'Use the tools to review market conditions, test strategies on historical data and practice with virtual funds before making your own decisions.',
+    title: 'Research At Your Own Pace',
+    desc: 'Study market conditions, test an idea against historical data and practice with virtual funds. You decide what to do next.',
     visual: 'decide',
   },
 ];
 
 export const CLARITY_POINTS = [
-  { title: 'Data Protection', desc: 'We collect only the basic contact details needed to run your account.' },
-  { title: 'Account Security', desc: 'Keep your access details private and contact us if something looks wrong.' },
-  { title: 'Privacy Practices', desc: 'Our privacy policy explains what we collect and how your information is used.' },
-  { title: 'Secure Access', desc: 'Use a trusted device and a secure connection when you sign in.' },
-  { title: 'Platform Transparency', desc: 'The platform explains what its tools do and does not promise outcomes.' },
-  { title: 'Risk Awareness', desc: 'Trading involves risk. Test ideas carefully and never risk more than you can afford.' },
+  { title: 'Data Collection', desc: 'Name, email and phone number are used to create and support your account.' },
+  { title: 'Privacy Policy', desc: 'The policy explains what we collect, why we collect it and how long we keep it.' },
+  { title: 'Account Access', desc: 'Keep your sign in details private and use a trusted device and connection.' },
+  { title: 'Support', desc: 'Contact us if you notice unusual account activity or need help with your details.' },
+  { title: 'No Extra Data', desc: 'We do not ask for bank details or wallet keys at registration.' },
+  { title: 'Your Rights', desc: 'You can ask to access or correct the personal information we hold.' },
 ];
 
 export const TESTIMONIALS = [
@@ -320,19 +320,19 @@ export const TESTIMONIALS = [
 export const FAQS = [
   {
     q: 'What Is Trader AI?',
-    a: 'Trader AI is an AI assisted trading analysis platform. It brings market research, chart analysis, strategy backtesting, paper trading and market monitoring tools together in one workspace.',
+    a: 'Trader AI is a research platform for market analysis and virtual practice. It does not place trades, hold funds or provide personal financial advice.',
   },
   {
     q: 'How Does Trader AI Work?',
-    a: 'Create an account, explore the trading tools, then analyze markets, test strategies on historical data and practice with virtual funds. Every trading decision remains yours.',
+    a: 'Registration creates your workspace. From there, you choose what to follow, how to research it and whether to test an idea. Trader AI does not act on your behalf.',
   },
   {
     q: 'What Is AI Chart Analysis?',
-    a: 'AI assisted chart analysis helps identify patterns, technical indicators, trends and important price levels. It supports your research; it does not place trades or give personal financial advice.',
+    a: 'AI assisted chart analysis scans a chart for patterns, indicators, trends and key price levels. The output supports your own research; it does not place orders or provide personal financial advice.',
   },
   {
     q: 'What Is Strategy Backtesting?',
-    a: 'Backtesting tests a trading strategy against historical market data. You can review performance and potential risks; past results do not guarantee future outcomes.',
+    a: 'Backtesting runs an idea against historical market data so you can review how it would have behaved and what risks it carried. Past results do not predict future outcomes.',
   },
   {
     q: 'Is Paper Trading Available?',

@@ -33,7 +33,7 @@ export default function Steps({ heading = true }) {
           <SectionHead
             eyebrow="The Process"
             title="How It Works"
-            sub="Three simple steps from creating your account to testing your first trading idea."
+            sub="Three simple steps from registration to your first research session."
           />
         )}
 

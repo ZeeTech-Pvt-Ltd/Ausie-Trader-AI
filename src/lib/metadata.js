@@ -25,7 +25,7 @@ export function pageMetadata(route) {
           url: OG_IMAGE,
           width: 1200,
           height: 630,
-          alt: `${BRAND} trading analysis workspace`,
+          alt: `${BRAND} research workspace`,
           type: 'image/png',
         },
       ],

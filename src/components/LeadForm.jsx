@@ -9,10 +9,10 @@ export default function LeadForm() {
         <div className="join__grid">
           <div className="join__copy" data-reveal>
             <Eyebrow>Registration</Eyebrow>
-            <h2 className="h2" id="join-heading">Get Started With Trader AI</h2>
+            <h2 className="h2" id="join-heading">Your Research Account Starts Here</h2>
             <p className="section-sub">
-              Registration is quick and secure. Tell us who you are and we'll set up a workspace
-              where you can explore trading analysis tools, paper trading and learning resources.
+              Tell us who you are and we'll set up your research workspace. Registration takes a few
+              minutes.
             </p>
             <ul className="join__points">
               {SIGNUP_POINTS.map((point) => (
@@ -20,8 +20,8 @@ export default function LeadForm() {
               ))}
             </ul>
             <p className="join__privacy">
-              Your privacy matters. We only collect what we need to run your account, and we never
-              ask for sensitive financial information during registration.
+              Trader AI is a research platform. Registering does not open a brokerage account or
+              place you in any market.
             </p>
           </div>
 

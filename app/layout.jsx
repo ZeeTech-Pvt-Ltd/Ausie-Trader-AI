@@ -30,7 +30,7 @@ export const metadata = {
   applicationName: 'Trader AI',
   title: 'Trader AI | AI Powered Trading Analysis Platform',
   description:
-    'Trader AI brings AI powered trading tools, chart analysis, strategy backtesting and paper trading together in one platform. Start exploring today.',
+    'Trader AI is a research workspace for AI assisted market analysis, strategy backtesting and virtual paper trading. Start exploring today.',
   verification: {
     google: 'nItyJQ-yY2lZBlCUtV14XAJ7vCMA-XTRjQ8qecyaYG4',
   },
@@ -56,7 +56,7 @@ const SITE_SCHEMA = {
       name: 'Trader AI',
       url: `${SITE}/`,
       description:
-        'AI powered trading analysis for a global audience, with market research, chart analysis, strategy testing and paper trading tools.',
+        'AI powered market research for a global audience, with chart analysis, strategy testing and virtual paper trading tools.',
     },
     {
       '@type': 'Organization',
