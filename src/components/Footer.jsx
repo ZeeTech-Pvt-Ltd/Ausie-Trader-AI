@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="footer__brand">
             <Logo />
             <p className="footer__tag">
-              Research tools for market study.
+              AI powered market insights and analysis tools to support smarter trading decisions.
             </p>
           </div>
 
