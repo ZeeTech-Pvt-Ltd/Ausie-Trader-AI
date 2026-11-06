@@ -1,4 +1,4 @@
-// Per-route SEO configuration for Ausie Trader AI.
+// Per-route SEO configuration for Trader AI.
 // Single source of truth for titles, descriptions, canonicals and robots
 // rules. src/lib/metadata.js maps it onto Next's Metadata API, so every head
 // tag is baked into the prerendered HTML rather than patched in at runtime.
@@ -10,58 +10,58 @@ export const OG_IMAGE = `${SITE_URL}/og-image.png`;
 
 export const SEO = {
   '/': {
-    title: 'Ausie Trader AI | AI Crypto Research for Australia',
-    description: 'AI assisted crypto research for Australians. Explore market data, charts and learning resources for Bitcoin, Ethereum and more. Start researching today.',
-    keywords: 'Ausie Trader AI, AI crypto research, crypto analysis Australia, market insights, Bitcoin, Ethereum',
+    title: 'Trader AI | AI Powered Trading Analysis Platform',
+    description: 'Trader AI brings AI powered trading tools, chart analysis, strategy backtesting and paper trading together in one platform. Start exploring today.',
+    keywords: 'Trader AI, AI trading analysis, trading tools, strategy backtesting, paper trading, market insights',
     canonical: `${SITE_URL}/`,
   },
   '/about': {
-    title: 'About Us | Ausie Trader AI',
-    description: 'See how Ausie Trader AI pairs AI assisted market scanning with plain English crypto education for Australians. Read our story today.',
+    title: 'About Us | Trader AI',
+    description: 'Learn how Trader AI pairs AI assisted market analysis with practical trading education for a global audience. Read our story today.',
     canonical: `${SITE_URL}/about`,
   },
   '/how-it-works': {
-    title: 'How It Works | Ausie Trader AI',
-    description: 'See how Ausie Trader AI takes you from sign up to clearer crypto research in three simple steps. Start exploring today.',
+    title: 'How It Works | Trader AI',
+    description: 'See how Trader AI takes you from sign up to your first trading analysis session in three simple steps. Start exploring today.',
     canonical: `${SITE_URL}/how-it-works`,
   },
   '/reviews': {
-    title: 'Reviews | Ausie Trader AI',
-    description: 'Read reviews from Ausie Trader AI users, plus practical checks for any trading platform before you sign up. Get in touch today.',
+    title: 'Reviews | Trader AI',
+    description: 'Read reviews from Trader AI users, plus practical checks for any trading platform before you sign up. Get in touch today.',
     canonical: `${SITE_URL}/reviews`,
   },
   '/faq': {
-    title: 'FAQ | Ausie Trader AI',
-    description: 'Answers to common questions about Ausie Trader AI, who it is for, how registration works and how we protect your details. Find your answer now.',
+    title: 'FAQ | Trader AI',
+    description: 'Answers to common questions about Trader AI, its trading tools, paper trading, backtesting and how registration works. Find your answer now.',
     canonical: `${SITE_URL}/faq`,
   },
   '/contact': {
-    title: 'Contact Us | Ausie Trader AI',
-    description: 'Questions about Ausie Trader AI? Contact our Australian support team during business hours for platform or account help. Get in touch today.',
+    title: 'Contact Us | Trader AI',
+    description: 'Questions about Trader AI? Contact our support team for help with the platform, your account or the trading tools. Get in touch today.',
     canonical: `${SITE_URL}/contact`,
   },
   '/privacy': {
-    title: 'Privacy Policy | Ausie Trader AI',
-    description: 'See how Ausie Trader AI collects, uses and protects your personal information, and what we never ask for at sign up. Read the full policy.',
+    title: 'Privacy Policy | Trader AI',
+    description: 'See how Trader AI collects, uses and protects your personal information, and what we never ask for at sign up. Read the full policy.',
     canonical: `${SITE_URL}/privacy`,
   },
   '/terms': {
-    title: 'Terms & Conditions | Ausie Trader AI',
-    description: 'The terms that apply when you use the Ausie Trader AI website and platform, from registration to acceptable use. Review the terms before you register.',
+    title: 'Terms & Conditions | Trader AI',
+    description: 'The terms that apply when you use the Trader AI website and platform, from registration to acceptable use. Review the terms before you register.',
     canonical: `${SITE_URL}/terms`,
   },
   '/risk-disclosure': {
-    title: 'Risk Disclosure | Ausie Trader AI',
-    description: 'Understand the risks of researching and trading digital assets, including volatility and loss, before you act. Read the full risk disclosure.',
+    title: 'Risk Disclosure | Trader AI',
+    description: 'Understand the risks of trading and using AI assisted research tools, including volatility and loss. Read the full risk disclosure.',
     canonical: `${SITE_URL}/risk-disclosure`,
   },
   '/thank-you': {
-    title: 'Thank You | Ausie Trader AI',
-    description: 'Your account request has been received. Thank you for choosing Ausie Trader AI. Check your inbox for the next steps.',
+    title: 'Thank You | Trader AI',
+    description: 'Your account request has been received. Thank you for choosing Trader AI. Check your inbox for the next steps.',
     noindex: true,
   },
   '404': {
-    title: 'Page Not Found | Ausie Trader AI',
+    title: 'Page Not Found | Trader AI',
     description: 'That page could not be found. Head back to the homepage or contact our team for help. Find your way back now.',
     noindex: true,
   },

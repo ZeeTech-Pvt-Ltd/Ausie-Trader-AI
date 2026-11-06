@@ -6,8 +6,11 @@ export default function Why() {
     <section className="why" aria-labelledby="why-heading">
       <div className="container">
         <div className="section-head" data-reveal>
-          <Eyebrow>Why Ausie Trader AI</Eyebrow>
-          <h2 className="h2" id="why-heading">Why people use Ausie Trader AI</h2>
+          <Eyebrow>Why Trader AI</Eyebrow>
+          <h2 className="h2" id="why-heading">Why Choose Trader AI?</h2>
+          <p className="section-sub">
+            Tools that support your research, testing and practice, without promising outcomes.
+          </p>
         </div>
 
         <div className="why__grid">

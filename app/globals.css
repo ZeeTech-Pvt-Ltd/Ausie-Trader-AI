@@ -187,7 +187,7 @@ p { margin: 0; }
   position: relative;
   background: radial-gradient(120% 120% at 80% -10%, #10203a 0%, #0d0e0f 48%, #0d0e0f 100%);
   color: #fff;
-  padding: calc(var(--header-h) + 72px) 0 120px;
+  padding: calc(var(--header-h) + 72px) 0 72px;
   overflow: hidden;
 }
 .hero__bg { position: absolute; inset: 0; pointer-events: none; }
@@ -209,7 +209,7 @@ p { margin: 0; }
 }
 .hero__copy { max-width: 620px; }
 
-.hero__title { font-size: clamp(32px, 6vw, 70px); font-weight: 800; letter-spacing: -0.035em; margin: 26px 0 24px; color: #fff; }
+.hero__title { font-size: clamp(32px, 8vw, 55px); font-weight: 800; letter-spacing: -0.035em; margin: 26px 0 24px; color: #fff; }
 .hero__line { display: block; }
 .hero__line--accent {
   background: linear-gradient(120deg, #6fb2fa, #0369fb 55%, #6fb2fa);
@@ -224,7 +224,6 @@ p { margin: 0; }
 .hero__meta-label { font-size: 13px; color: var(--muted-on-dark); }
 
 /* Hero curve transition into light */
-.hero__curve { position: absolute; left: 0; right: 0; bottom: -1px; height: 80px; background: var(--bg); border-radius: 46px 46px 0 0; z-index: 1; }
 
 /* ---- hero visual ---- */
 .hero__visual { position: relative; z-index: 2; }
@@ -296,7 +295,8 @@ p { margin: 0; }
 /* ============================================================
    SECTIONS, shared spacing
    ============================================================ */
-.why, .join, .platform, .steps, .features, .showcase, .clarity, .testimonials, .faq { padding: 108px 0; }
+.why, .join, .steps, .features, .showcase, .clarity, .testimonials, .faq { padding: 108px 0; }
+.platform { padding: 70px 0; }
 
 /* ============================================================
    STEPS
@@ -860,7 +860,7 @@ html.reduced-motion [data-reveal], html.reduced-motion [data-hero] { opacity: 1 
 /* ============================================================
    RISK BAND (homepage, before the form)
    ============================================================ */
-.risk-band { padding: 0; }
+.risk-band { padding: 0 0 60px; }
 .risk-band__card {
   position: relative; overflow: hidden;
   display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 52px; align-items: center;
@@ -1111,14 +1111,14 @@ html.reduced-motion [data-reveal], html.reduced-motion [data-hero] { opacity: 1 
 @media (max-width: 640px) {
   body { font-size: 16px; }
   .container { padding: 0 20px; }
-  .why, .join, .platform, .steps, .features, .showcase, .clarity, .testimonials, .faq { padding: 72px 0; }
+  .why, .join, .steps, .features, .showcase, .clarity, .testimonials, .faq { padding: 72px 0; }
   .page-head { padding: calc(var(--header-h) + 40px) 0 40px; }
   .contact, .legal { padding: 24px 0 72px; }
   .about-hero { padding: calc(var(--header-h) + 40px) 0 56px; }
   .about-hero__tag { left: 8px; }
   .about-focus__media img { height: 280px; }
 
-  .hero { padding: calc(var(--header-h) + 48px) 0 90px; }
+  .hero { padding: calc(var(--header-h) + 72px) 0 72px; }
   .hero__meta { flex-wrap: wrap; gap: 22px; }
   .hero__cta .btn { width: 100%; }
   .hv-stage { height: 350px; }
@@ -1173,3 +1173,9 @@ html.reduced-motion [data-reveal], html.reduced-motion [data-hero] { opacity: 1 
   *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
   [data-reveal], [data-hero] { opacity: 1 !important; transform: none !important; }
 }
+
+/* ============================================================
+   HEADING WEIGHTS
+   ============================================================ */
+h3,
+h3[class] { font-weight: 600; }

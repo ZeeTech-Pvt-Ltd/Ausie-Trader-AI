@@ -8,11 +8,13 @@ export default function Platform() {
         <div className="platform__grid">
           <div className="platform__copy" data-reveal>
             <Eyebrow>The Platform</Eyebrow>
-            <h2 className="h2" id="platform-heading">Everything You Need to Research Crypto Markets</h2>
+            <h2 className="h2" id="platform-heading">What Is Trader AI?</h2>
             <p className="section-sub">
-              Ausie Trader AI brings crypto market data, AI assisted analysis and charting into
-              one easy to use interface, so you can stop juggling scattered exchanges, news feeds
-              and spreadsheets.
+              Trader AI is an AI powered trading analysis platform that brings market research,
+              chart analysis, strategy testing, simulated trading and market monitoring tools
+              together in one workspace. Use it to understand market conditions, explore trading
+              ideas and evaluate strategies before making your own decisions. The watchlist preview
+              shown here is illustrative demo data, not a live market feed.
             </p>
             <ul className="platform__list">
               {PLATFORM_POINTS.map((point) => (

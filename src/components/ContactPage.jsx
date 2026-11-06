@@ -10,7 +10,7 @@ export default function ContactPage() {
         dark
         eyebrow="Contact Us"
         title="We're here to help"
-        sub="Questions about the platform, your account or our research tools? Our team is available during Australian business hours and happy to point you in the right direction."
+        sub="Questions about the platform, your account or our trading tools? Our team is available during business hours and happy to point you in the right direction."
       />
 
       <section className="contact">
@@ -25,10 +25,10 @@ export default function ContactPage() {
               <ul className="contact__list">
                 <li>
                   <span>Email us</span>
-                  <a href={`mailto:${CONTACT_INFO.email}`}>{CONTACT_INFO.email}</a>
+                  <a href={`mailto:${CONTACT_INFO.email}`}>Email Support</a>
                 </li>
                 <li>
-                  <span>Based in</span>
+                  <span>Location</span>
                   <b>{CONTACT_INFO.location}</b>
                 </li>
                 <li>

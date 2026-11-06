@@ -135,7 +135,7 @@ export default function SignupForm() {
   return (
     <div className="join__card">
       <div className="join__card-head">
-        <h3 className="join__card-title">Create your account</h3>
+        <h3 className="join__card-title">Create Your Account</h3>
         <span className="join__secure" role="img" aria-label="Secure sign up">
           <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
             <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

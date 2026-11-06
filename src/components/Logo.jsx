@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function Logo({ light = false }) {
   const gradId = useId().replace(/:/g, '')
   return (
-    <Link className={`brand${light ? ' brand--light' : ''}`} href="/" aria-label="Ausie Trader AI, home">
+    <Link className={`brand${light ? ' brand--light' : ''}`} href="/" aria-label="Trader AI, home">
       <span className="brand__mark" aria-hidden="true">
         <svg viewBox="0 0 32 32" width="30" height="30">
           <defs>
@@ -21,7 +21,7 @@ export default function Logo({ light = false }) {
         </svg>
       </span>
       <span className="brand__text">
-        Ausie Trader <em>AI</em>
+        Trader <em>AI</em>
       </span>
     </Link>
   )

@@ -2,7 +2,7 @@
 // baked into the prerendered HTML at build time.
 import { SEO, SITE_URL, OG_IMAGE } from '@/data/seo.js'
 
-const BRAND = 'Ausie Trader AI'
+const BRAND = 'Trader AI'
 
 export function pageMetadata(route) {
   const conf = SEO[route]
@@ -25,7 +25,7 @@ export function pageMetadata(route) {
           url: OG_IMAGE,
           width: 1200,
           height: 630,
-          alt: `${BRAND} market research workspace`,
+          alt: `${BRAND} trading analysis workspace`,
           type: 'image/png',
         },
       ],

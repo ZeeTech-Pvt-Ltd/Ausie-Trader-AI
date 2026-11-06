@@ -6,13 +6,13 @@ import { SectionHead } from './ui.jsx';
 import { FAQS } from '../data/content.js';
 
 export default function Faq({ heading = true, limit, moreHref }) {
-  const [open, setOpen] = useState(0);
+  const [open, setOpen] = useState(-1);
   const items = typeof limit === 'number' ? FAQS.slice(0, limit) : FAQS;
 
   return (
     <section className={`faq${heading ? '' : ' faq--compact'}`} id="faq" aria-label="Frequently asked questions">
       <div className="container">
-        {heading && <SectionHead eyebrow="FAQ" title="Questions, Answered" />}
+        {heading && <SectionHead eyebrow="FAQ" title="Frequently Asked Questions" />}
 
         <div className="faq__list" data-reveal>
           {items.map((item, i) => {

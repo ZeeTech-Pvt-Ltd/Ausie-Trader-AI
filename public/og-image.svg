@@ -15,9 +15,9 @@
   <rect x="70" y="70" width="80" height="80" rx="22" fill="url(#accent)"/>
   <path d="M90 150 L128 110 L142 124 L166 96" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
   <circle cx="166" cy="96" r="8" fill="#FCC910"/>
-  <text x="72" y="300" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="78" font-weight="800" fill="#ffffff" letter-spacing="-2">Ausie Trader AI</text>
-  <text x="72" y="378" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="40" font-weight="600" fill="#6FB2FA">AI Crypto Research for Australia</text>
-  <text x="72" y="500" font-family="Manrope, Arial, sans-serif" font-size="24" fill="#808689">Market data, charts and learning resources to research crypto with more context.</text>
+  <text x="72" y="300" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="78" font-weight="800" fill="#ffffff" letter-spacing="-2">Trader AI</text>
+  <text x="72" y="378" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="40" font-weight="600" fill="#6FB2FA">AI Powered Trading Analysis</text>
+  <text x="72" y="500" font-family="Manrope, Arial, sans-serif" font-size="24" fill="#808689">Trading tools, chart analysis and strategy testing in one platform.</text>
   <circle cx="1030" cy="360" r="100" fill="#FCC910"/>
   <text x="1030" y="392" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="78" font-weight="700" fill="#0D0E0F">&#8383;</text>
 </svg>

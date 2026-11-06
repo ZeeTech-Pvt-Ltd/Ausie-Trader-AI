@@ -1,12 +1,12 @@
 const ITEMS = [
-  'Made in Australia',
-  'No credit card to start',
-  'Education included',
+  'AI Powered Analysis',
+  'Paper Trading Included',
+  'Learning Resources',
 ];
 
 export default function TrustStrip() {
   return (
-    <section className="trust-strip" aria-label="Why people choose Ausie Trader AI">
+    <section className="trust-strip" aria-label="Why people choose Trader AI">
       <div className="container trust-strip__inner">
         {ITEMS.map((item) => (
           <span className="trust-strip__item" key={item}>

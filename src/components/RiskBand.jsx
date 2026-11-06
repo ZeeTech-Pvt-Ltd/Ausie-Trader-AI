@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Eyebrow } from './ui.jsx';
 
 const POINTS = [
-  'Digital asset prices can fall as well as rise, sometimes quickly.',
+  'Market prices can fall as well as rise, sometimes quickly.',
   'You can lose some or all of the money you put at risk.',
   'We provide research and education, not personal financial advice.',
   'Past performance does not predict future results.',
@@ -15,9 +15,9 @@ export default function RiskBand() {
         <div className="risk-band__card" data-reveal>
           <div className="risk-band__copy">
             <Eyebrow light>Before You Register</Eyebrow>
-            <h2 className="h2" id="risk-heading">Understand the Risk First</h2>
+            <h2 className="h2" id="risk-heading">Understand The Risk First</h2>
             <p className="risk-band__lead">
-              Crypto markets move fast, and not always in your favour. Before you share your details,
+              Markets move fast, and not always in your favour. Before you share your details,
               take a moment to read what that means.
             </p>
             <ul className="risk-band__list">

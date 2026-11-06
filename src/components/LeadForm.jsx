@@ -8,11 +8,11 @@ export default function LeadForm() {
       <div className="container">
         <div className="join__grid">
           <div className="join__copy" data-reveal>
-            <Eyebrow>Get started</Eyebrow>
-            <h2 className="h2" id="join-heading">Join Ausie Trader AI in just a few minutes</h2>
+            <Eyebrow>Get Started</Eyebrow>
+            <h2 className="h2" id="join-heading">Get Started With Trader AI</h2>
             <p className="section-sub">
               Registration is quick and secure. Tell us who you are and we'll set up a workspace
-              where you can explore market insights, analytics and learning resources.
+              where you can explore trading analysis tools, paper trading and learning resources.
             </p>
             <ul className="join__points">
               {SIGNUP_POINTS.map((point) => (

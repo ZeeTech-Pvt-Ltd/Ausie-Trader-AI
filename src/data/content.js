@@ -1,5 +1,5 @@
-// Centralised content for Ausie Trader AI.
-// Written for an Australian audience, plain, human language, no hype.
+// Centralised content for Trader AI.
+// Written for a global audience, plain, human language, no hype.
 
 export const NAV_LINKS = [
   { label: 'Home', to: '/' },
@@ -12,21 +12,21 @@ export const NAV_LINKS = [
 
 export const CONTACT_INFO = {
   email: 'support@ausietraderai.com',
-  location: 'Sydney, NSW, Australia',
-  hours: 'Monday to Friday, 9am to 5pm AEST',
+  location: 'Global',
+  hours: 'Monday to Friday',
 };
 
 export const WHY_POINTS = [
-  { title: 'Insights from real data', desc: 'Structured market information, presented clearly and without clutter.' },
-  { title: 'Tools that are easy to use', desc: 'Analytics designed around how you actually research, day to day.' },
-  { title: 'Flexible access', desc: 'On desktop, tablet or your phone, wherever you are.' },
-  { title: 'Educational resources', desc: 'Build your knowledge at a pace that suits you.' },
+  { title: 'AI Assisted Analysis', desc: 'Use AI assisted chart analysis and market insights to understand price action and market conditions.' },
+  { title: 'Multiple Research Tools', desc: 'Backtesting, paper trading, market heatmaps and monitoring tools in one workspace.' },
+  { title: 'Risk Aware Preparation', desc: 'Test ideas on historical data and practice with virtual funds before risking real money.' },
+  { title: 'Market Monitoring', desc: 'Follow the assets you care about with watchlists and customizable alerts.' },
 ];
 
 export const SIGNUP_POINTS = [
   'Free to explore the platform',
   'Only basic contact details needed, no passwords or card details at sign up',
-  'Educational resources included from day one',
+  'Trading analysis tools and learning resources included',
 ];
 
 export const DEFAULT_ISO = 'AU';
@@ -224,52 +224,52 @@ export const TIMEZONE_TO_ISO = {
 };
 
 export const PLATFORM_POINTS = [
-  'Regularly updated market information',
-  'Clear visualisations, no clutter',
-  'One organised workspace for research',
+  'Market research and chart analysis in one place.',
+  'Strategy testing and simulated trading tools.',
+  'Market monitoring, heatmaps and customizable alerts.',
 ];
 
 export const FEATURES = [
   {
-    title: 'Intelligent Market Insights',
-    desc: 'See market movements through structured data and clear visuals, so the important signal is easy to spot.',
+    title: 'Strategy Backtester',
+    desc: 'Test trading strategies against historical market data. Evaluate performance, analyze results and understand potential risks.',
     tone: 'blue',
     icon: 'monitor',
     size: 'wide',
   },
   {
-    title: 'Simple Interface',
-    desc: 'Find what you need without the clutter, everything you use most is a click away.',
+    title: 'Paper Trading',
+    desc: 'Practice trading with virtual funds and simulated orders without risking real money.',
+    tone: 'mint',
+    icon: 'portfolio',
+    size: 'half',
+  },
+  {
+    title: 'AI Chart Analysis',
+    desc: 'Use AI assisted chart analysis to identify patterns, technical indicators, trends and important price levels.',
+    tone: 'blue',
+    icon: 'ai',
+    size: 'half',
+  },
+  {
+    title: 'Market Heatmap',
+    desc: 'Visualize market movements and identify assets showing different levels of market activity.',
     tone: 'mint',
     icon: 'grid',
-    size: 'half',
-  },
-  {
-    title: 'Awareness in Real Time',
-    desc: 'Stay up to date with market information that is refreshed regularly.',
-    tone: 'blue',
-    icon: 'alerts',
-    size: 'half',
-  },
-  {
-    title: 'Learning Resources',
-    desc: 'Grow your market knowledge with educational content written for every experience level.',
-    tone: 'mint',
-    icon: 'insights',
     size: 'tall',
   },
   {
-    title: 'Access on Any Device',
-    desc: 'Pick up your research wherever you left off, on any screen size.',
+    title: 'Smart Price & Indicator Alerts',
+    desc: 'Monitor selected price levels and technical indicators through customizable alerts.',
     tone: 'blue',
-    icon: 'portfolio',
+    icon: 'alerts',
     size: 'wide',
   },
   {
-    title: 'Secure Experience',
-    desc: 'We follow modern security and privacy practices, and keep your personal information protected.',
+    title: 'AI Market Analysis',
+    desc: 'Explore AI assisted market insights, technical trends and relevant market information.',
     tone: 'mint',
-    icon: 'ai',
+    icon: 'insights',
     size: 'half',
   },
 ];
@@ -285,30 +285,30 @@ export const STEPS = [
   {
     num: '01',
     title: 'Create Your Account',
-    desc: 'Complete the simple registration with just a few basic details. It only takes a couple of minutes.',
+    desc: 'Complete the simple registration with your basic contact details. It only takes a few minutes.',
     visual: 'explore',
   },
   {
     num: '02',
-    title: 'Explore Market Tools',
-    desc: 'Browse market insights, charts, watchlists and learning resources from one organised workspace.',
+    title: 'Explore Trading Tools',
+    desc: 'Browse chart analysis, paper trading, strategy testing, market heatmaps and alerts from one workspace.',
     visual: 'review',
   },
   {
     num: '03',
-    title: 'Make Informed Decisions',
-    desc: 'Use the available information to support your own research and decisions, at your own pace.',
+    title: 'Analyze, Test & Practice',
+    desc: 'Use the tools to review market conditions, test strategies on historical data and practice with virtual funds before making your own decisions.',
     visual: 'decide',
   },
 ];
 
 export const CLARITY_POINTS = [
-  { title: 'Clear market information', desc: 'Structured data, minimal jargon.' },
-  { title: 'Simple navigation', desc: 'Find what you need quickly.' },
-  { title: 'Responsive experience', desc: 'Great on any screen size.' },
-  { title: 'Learn at your own pace', desc: 'No pressure, no deadlines.' },
-  { title: 'Modern analytics', desc: 'Thoughtful, readable charts.' },
-  { title: 'Accessible interface', desc: 'Designed with everyone in mind.' },
+  { title: 'Data Protection', desc: 'We collect only the basic contact details needed to run your account.' },
+  { title: 'Account Security', desc: 'Keep your access details private and contact us if something looks wrong.' },
+  { title: 'Privacy Practices', desc: 'Our privacy policy explains what we collect and how your information is used.' },
+  { title: 'Secure Access', desc: 'Use a trusted device and a secure connection when you sign in.' },
+  { title: 'Platform Transparency', desc: 'The platform explains what its tools do and does not promise outcomes.' },
+  { title: 'Risk Awareness', desc: 'Trading involves risk. Test ideas carefully and never risk more than you can afford.' },
 ];
 
 export const TESTIMONIALS = [
@@ -319,36 +319,44 @@ export const TESTIMONIALS = [
 
 export const FAQS = [
   {
-    q: 'What is Ausie Trader AI?',
-    a: 'Ausie Trader AI is a crypto research platform built for Australians. It combines market data, AI assisted analysis, charting and educational resources in one place, so you can research Bitcoin, Ethereum and other digital assets with clearer context.',
+    q: 'What Is Trader AI?',
+    a: 'Trader AI is an AI assisted trading analysis platform. It brings market research, chart analysis, strategy backtesting, paper trading and market monitoring tools together in one workspace.',
   },
   {
-    q: 'Who is Ausie Trader AI designed for?',
-    a: 'Anyone in Australia who wants to research crypto markets more clearly, whether you are just starting out or already follow the market. The tools are built to be approachable for every level of experience.',
+    q: 'How Does Trader AI Work?',
+    a: 'Create an account, explore the trading tools, then analyze markets, test strategies on historical data and practice with virtual funds. Every trading decision remains yours.',
   },
   {
-    q: 'Is Ausie Trader AI suitable for beginners?',
-    a: 'Yes. The platform is designed to be easy to use, with plain language insights, readable charts and learning resources that help you build your understanding over time.',
+    q: 'What Is AI Chart Analysis?',
+    a: 'AI assisted chart analysis helps identify patterns, technical indicators, trends and important price levels. It supports your research; it does not place trades or give personal financial advice.',
   },
   {
-    q: 'What tools are available?',
-    a: 'You get market insights, charting, watchlists, daily summaries and educational content, all organised in a single workspace so you do not have to jump between exchanges, news feeds and spreadsheets.',
+    q: 'What Is Strategy Backtesting?',
+    a: 'Backtesting tests a trading strategy against historical market data. You can review performance and potential risks; past results do not guarantee future outcomes.',
   },
   {
-    q: 'Can I access the platform on mobile?',
-    a: 'Yes. Ausie Trader AI works on desktop, tablet and mobile, so you can pick up your research wherever you left off.',
+    q: 'Is Paper Trading Available?',
+    a: 'Yes. Paper trading uses virtual funds and simulated orders, so you can practice without risking real money.',
   },
   {
-    q: 'How does registration work?',
-    a: 'Registration is simple and secure. We only ask for your name, email address and phone number, no passwords or card details at sign up. It takes just a few minutes.',
+    q: 'How Does the Market Heatmap Work?',
+    a: 'The heatmap gives a visual overview of market movements and activity across assets. Use it to spot areas that may deserve a closer look, not as a trading signal.',
   },
   {
-    q: 'Is financial advice provided?',
-    a: 'No. Ausie Trader AI provides market information and research tools, not financial advice or trade execution. It does not hold or manage funds, run automated trading strategies or guarantee returns. All investing involves risk.',
+    q: 'Can I Set Price & Indicator Alerts?',
+    a: 'Yes. You can set customizable alerts for selected price levels and technical indicators, then review them in your workspace.',
   },
   {
-    q: 'Is my information secure?',
-    a: 'Yes. We follow modern security and privacy practices and only collect the details we need to run your account. We never ask for sensitive financial information during registration.',
+    q: 'Does Trader AI Execute Real Trades?',
+    a: 'No. Trader AI does not place buy or sell orders, execute real trades or manage funds. It provides research, analysis and simulated trading tools; you decide whether and how to act.',
+  },
+  {
+    q: 'Is Real Time Market Data Available?',
+    a: 'The market preview shown on this website is illustrative demo data, not a live market feed. Live data availability depends on your workspace and should be confirmed before you rely on it.',
+  },
+  {
+    q: 'Is Trader AI Suitable for Beginners?',
+    a: 'Yes. The workspace is designed to be approachable, with paper trading, clear charts and learning resources. It does not promise results; trading involves risk.',
   },
 ];
 

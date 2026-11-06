@@ -27,10 +27,10 @@ const SITE = 'https://ausietraderai.com'
 
 export const metadata = {
   metadataBase: new URL(SITE),
-  applicationName: 'Ausie Trader AI',
-  title: 'Ausie Trader AI | AI Crypto Research for Australia',
+  applicationName: 'Trader AI',
+  title: 'Trader AI | AI Powered Trading Analysis Platform',
   description:
-    'AI assisted crypto research for Australians. Explore market data, charts and learning resources for Bitcoin, Ethereum and more. Start researching today.',
+    'Trader AI brings AI powered trading tools, chart analysis, strategy backtesting and paper trading together in one platform. Start exploring today.',
   verification: {
     google: 'nItyJQ-yY2lZBlCUtV14XAJ7vCMA-XTRjQ8qecyaYG4',
   },
@@ -53,14 +53,14 @@ const SITE_SCHEMA = {
   '@graph': [
     {
       '@type': 'WebSite',
-      name: 'Ausie Trader AI',
+      name: 'Trader AI',
       url: `${SITE}/`,
       description:
-        'AI assisted crypto research for Australians, market data, charts, watchlists and learning resources in one clear workspace.',
+        'AI powered trading analysis for a global audience, with market research, chart analysis, strategy testing and paper trading tools.',
     },
     {
       '@type': 'Organization',
-      name: 'Ausie Trader AI',
+      name: 'Trader AI',
       url: `${SITE}/`,
       logo: `${SITE}/favicon.svg`,
     },

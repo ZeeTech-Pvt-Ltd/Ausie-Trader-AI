@@ -6,7 +6,7 @@ export default function PrivacyPage() {
       <PageHeader
         eyebrow="Legal"
         title="Privacy Policy"
-        sub="How we collect, use and protect your personal information when you use Ausie Trader AI."
+        sub="How we collect, use and protect your personal information when you use Trader AI."
       />
 
       <section className="legal">
@@ -55,14 +55,13 @@ export default function PrivacyPage() {
             <h2>6. Your rights</h2>
             <p>
               You may request access to, or correction of, the personal information we hold about
-              you at any time by contacting our team. We will respond during Australian business
-              hours.
+              you at any time by contacting our team. We will respond during business hours.
             </p>
 
             <h2>7. Contact</h2>
             <p>
               Questions about this policy? Reach us at{' '}
-              <a href="mailto:support@ausietraderai.com">support@ausietraderai.com</a>.
+              <a href="mailto:support@ausietraderai.com">Contact Support</a>.
             </p>
           </div>
         </div>

@@ -31,9 +31,9 @@ export default function Steps({ heading = true }) {
       <div className="container">
         {heading && (
           <SectionHead
-            eyebrow="How It Works"
-            title="Up and running in three simple steps"
-            sub="No steep learning curve, just a clear path from sign up to smarter research."
+            eyebrow="The Process"
+            title="How It Works"
+            sub="Three simple steps from creating your account to testing your first trading idea."
           />
         )}
 

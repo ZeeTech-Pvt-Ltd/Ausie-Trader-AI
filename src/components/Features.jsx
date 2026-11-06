@@ -54,12 +54,12 @@ export default function Features() {
       <div className="container">
         <div className="section-head section-head--split" data-reveal>
           <div>
-            <Eyebrow>Core Features</Eyebrow>
-            <h2 className="h2" id="features-heading">Designed to make market research clearer</h2>
+            <Eyebrow>Trading Tools</Eyebrow>
+            <h2 className="h2" id="features-heading">Powerful Trading Features</h2>
           </div>
           <p className="section-sub">
-            Every feature exists for one reason: to help you access, understand and use market
-            information with less effort.
+            Six tools for chart analysis, strategy testing, simulated practice and market
+            monitoring, all in one workspace.
           </p>
         </div>
 

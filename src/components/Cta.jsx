@@ -10,8 +10,11 @@ export default function Cta() {
           <div className="cta__chip cta__chip--1" aria-hidden="true">▲ Bullish</div>
           <div className="cta__chip cta__chip--2" aria-hidden="true">AI · On</div>
 
-          <h2 className="cta__title" id="cta-heading">Start Exploring Smarter Market Tools</h2>
-          <p className="cta__lead">See what the market is doing, and understand why it matters. Join Ausie Trader AI today.</p>
+          <h2 className="cta__title" id="cta-heading">Start Your Trading Journey With Trader AI</h2>
+          <p className="cta__lead">
+            Explore trading tools designed to support your research, strategy testing and practice.
+            Get started with Trader AI today.
+          </p>
           <Button variant="yellow" size="lg" href="#register">Get Started</Button>
           <p className="cta__note">No financial advice. No guaranteed returns. Just clearer context.</p>
         </div>

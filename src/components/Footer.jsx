@@ -10,8 +10,8 @@ export default function Footer() {
           <div className="footer__brand">
             <Logo />
             <p className="footer__tag">
-              An Australian crypto research platform, built to help you understand digital asset
-              markets and make more informed decisions with AI assisted scanning, charts and education.
+              A global AI powered trading analysis platform, built to help you understand markets,
+              test strategies and practice in one workspace.
             </p>
           </div>
 
@@ -29,8 +29,8 @@ export default function Footer() {
           ))}
 
           <div className="footer__col">
-            <h3 className="footer__heading">Get in touch</h3>
-            <a href={`mailto:${CONTACT_INFO.email}`}>{CONTACT_INFO.email}</a>
+            <h3 className="footer__heading">Get In Touch</h3>
+            <a href={`mailto:${CONTACT_INFO.email}`}>Email Support</a>
             <span className="footer__line">{CONTACT_INFO.location}</span>
             <span className="footer__line">{CONTACT_INFO.hours}</span>
           </div>
@@ -38,17 +38,16 @@ export default function Footer() {
 
         <div className="footer__disclaimer">
           <p>
-            Risk warning: Financial markets involve risk. Information provided on this website is
-            general in nature and does not constitute personal financial advice. Consider your
-            circumstances and seek professional advice where appropriate. Ausie Trader AI does not
-            provide personal financial product advice under the Corporations Act 2001 (Cth). All
-            examples shown are illustrative only.
+            Risk warning: Trading and investing involve risk. Information provided on this website
+            is general in nature and does not constitute personal financial advice. Consider your
+            circumstances and seek professional advice where appropriate. Trader AI does not
+            provide personal financial product advice under the Corporations Act 2001 (Cth).
           </p>
         </div>
 
         <div className="footer__bottom">
-          <span>© 2026 Ausie Trader AI. All rights reserved.</span>
-          <span>ausietraderai.com</span>
+          <span>© 2026 Trader AI. All rights reserved.</span>
+          <span>AI Powered Trading Analysis</span>
         </div>
       </div>
     </footer>

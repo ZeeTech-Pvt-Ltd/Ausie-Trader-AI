@@ -6,7 +6,7 @@ const IMAGES = {
   focus: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1000&q=80',
 };
 
-const BADGES = ['Made in Australia', 'No credit card to start', 'Education included'];
+const BADGES = ['Global Access', 'No credit card to start', 'Education included'];
 
 const PILLARS = [
   {
@@ -41,9 +41,9 @@ export default function AboutPage() {
               <Eyebrow light>About Us</Eyebrow>
               <h1 className="about-hero__title">Research that helps you decide, not guess.</h1>
               <p className="about-hero__sub">
-                Ausie Trader AI is an Australian platform that pairs AI assisted market scanning
-                with plain English education. We help everyday people research Bitcoin, Ethereum and
-                60+ other cryptocurrencies with clearer context, no hype, no noise, no shortcuts.
+                Trader AI is a global platform that pairs AI assisted market analysis with plain
+                English education. We help everyday people research Bitcoin, Ethereum and other
+                digital assets with clearer context, no hype, no noise, no shortcuts.
               </p>
               <ul className="about-hero__badges">
                 {BADGES.map((badge) => (
@@ -86,7 +86,7 @@ export default function AboutPage() {
               <Eyebrow>Our story</Eyebrow>
               <h2 className="h2">We got tired of guessing.</h2>
               <p>
-                Ausie Trader AI started with a simple observation: most people don't have a crypto
+                Trader AI started with a simple observation: most people don't have a crypto
                 problem, they have an information problem. Between jargon, hype and contradictory
                 advice, finding a straight answer about a digital asset can feel like a second job.
               </p>
@@ -97,7 +97,7 @@ export default function AboutPage() {
               </p>
               <ul className="about-story__bullets">
                 <li>Market scanning, alerts and guides in one calm workspace.</li>
-                <li>Built for Australians, with Australian support hours.</li>
+                <li>Built for a global audience, with support during business hours.</li>
                 <li>No advice robots, no guaranteed returns, just clearer information.</li>
               </ul>
             </div>

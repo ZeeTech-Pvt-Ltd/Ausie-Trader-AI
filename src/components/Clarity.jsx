@@ -3,20 +3,19 @@ import { CLARITY_POINTS } from '../data/content.js';
 
 export default function Clarity() {
   return (
-    <section className="clarity" id="clarity" aria-labelledby="clarity-heading">
+    <section className="clarity" id="security" aria-labelledby="security-heading">
       <div className="container">
         <div className="clarity__grid">
           <div className="clarity__copy" data-reveal>
-            <Eyebrow>Why Ausie Trader AI</Eyebrow>
-            <h2 className="h2" id="clarity-heading">Built for Clarity, Not Complexity</h2>
+            <Eyebrow>Trust and Safety</Eyebrow>
+            <h2 className="h2" id="security-heading">Security & Trust</h2>
             <p>
-              Financial markets are full of noise. We focus on presenting information in a way that
-              is easy to scan, simple to understand and genuinely useful for your own research,
-              without jargon, pressure or promises.
+              We keep the platform transparent about what it does. Your account details are handled
+              with care, and our privacy policy explains what we collect and how it is used.
             </p>
             <p>
-              Whether you're new to crypto or refining an existing routine, the goal is the same: a
-              calmer, more informed way to explore market information.
+              No platform can remove market risk. The tools support your research, testing and
+              practice; they do not promise outcomes.
             </p>
           </div>
 

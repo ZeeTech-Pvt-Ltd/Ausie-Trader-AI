@@ -6,7 +6,7 @@ export default function TermsPage() {
       <PageHeader
         eyebrow="Legal"
         title="Terms & Conditions"
-        sub="The terms that apply when you use the Ausie Trader AI platform and website."
+        sub="The terms that apply when you use the Trader AI platform and website."
       />
 
       <section className="legal">
@@ -14,13 +14,13 @@ export default function TermsPage() {
           <div className="legal__body" data-reveal>
             <h2>1. Acceptance</h2>
             <p>
-              By registering for or using Ausie Trader AI, you agree to these terms. If you do not
+              By registering for or using Trader AI, you agree to these terms. If you do not
               agree, please do not use the platform.
             </p>
 
-            <h2>2. What Ausie Trader AI is</h2>
+            <h2>2. What Trader AI is</h2>
             <p>
-              Ausie Trader AI is a market research and information platform. It provides market
+              Trader AI is a market research and information platform. It provides market
               data, AI assisted analysis, charting and educational resources. It is a research and
               education tool, not a brokerage, trading platform, wallet or investment service. It
               does not execute trades, place buy or sell orders, hold or manage funds, or run
@@ -31,7 +31,7 @@ export default function TermsPage() {
             <h2>3. No financial advice</h2>
             <p>
               Information on the platform is general in nature and does not constitute personal
-              financial advice. Ausie Trader AI does not provide personal financial product advice
+              financial advice. Trader AI does not provide personal financial product advice
               under the Corporations Act 2001 (Cth). You should consider your own circumstances and
               seek professional advice where appropriate.
             </p>
@@ -58,7 +58,7 @@ export default function TermsPage() {
             <h2>7. Contact</h2>
             <p>
               Questions about these terms? Reach us at{' '}
-              <a href="mailto:support@ausietraderai.com">support@ausietraderai.com</a>.
+              <a href="mailto:support@ausietraderai.com">Contact Support</a>.
             </p>
           </div>
         </div>

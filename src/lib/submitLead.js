@@ -1,4 +1,4 @@
-// Lead submission for the Ausie Trader AI signup/contact form.
+// Lead submission for the Trader AI signup/contact form.
 //
 // Posts JSON to the relay, which assigns the real account password and
 // resolves the visitor's IP server-side - no IP is read or sent from here.

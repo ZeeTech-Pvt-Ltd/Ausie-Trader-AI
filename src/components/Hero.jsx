@@ -2,9 +2,9 @@ import { Button, ArrowIcon } from './ui.jsx';
 import { HeroPreload } from './PreloadResources.jsx';
 
 const META = [
-  { value: '60+', label: 'Assets tracked' },
+  { value: '60+', label: 'Assets Tracked' },
   { value: '24/7', label: 'Access' },
-  { value: '6+', label: 'Core tools' },
+  { value: '6+', label: 'Core Tools' },
 ];
 
 export default function Hero() {
@@ -22,24 +22,25 @@ export default function Hero() {
         <div className="hero__copy">
           <p className="eyebrow eyebrow--light" data-hero="eyebrow">
             <span className="eyebrow__dot" aria-hidden="true" />
-            Smart tools for modern markets
+            AI Powered Trading Analysis
           </p>
 
           <h1 className="hero__title">
-            <span className="hero__line" data-hero="line1">See the Market</span>
-            <span className="hero__line hero__line--accent" data-hero="line2">With Clearer Context</span>
+            <span className="hero__line" data-hero="line1">Trader AI:</span>{' '}
+            <span className="hero__line hero__line--accent" data-hero="line2">AI Powered Trading Analysis Platform</span>
           </h1>
 
           <p className="hero__lead" data-hero="lead">
-            AI assisted market scanning, clear charts and honest education, everything Australians
-            need to research Bitcoin, Ethereum and 60+ other cryptocurrencies with less guesswork
-            and more confidence.
+            Trader AI brings intelligent trading tools, AI powered chart analysis, strategy
+            backtesting, paper trading and real time market insights together in one platform.
+            Analyze market trends, explore trading strategies, monitor price movements and make
+            more informed trading decisions with advanced AI assisted tools.
           </p>
 
           <div className="hero__cta" data-hero="cta">
-            <Button variant="primary" size="lg" href="#platform">Explore the Platform</Button>
-            <Button variant="ghost" size="lg" href="#how-it-works">
-              How It Works
+            <Button variant="primary" size="lg" href="#register">Get Started</Button>
+            <Button variant="ghost" size="lg" href="#features">
+              Explore Features
               <ArrowIcon />
             </Button>
           </div>
@@ -69,8 +70,6 @@ export default function Hero() {
           />
         </div>
       </div>
-
-      <div className="hero__curve" aria-hidden="true" />
     </section>
   );
 }

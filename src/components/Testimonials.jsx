@@ -1,29 +1,22 @@
-import { Eyebrow } from './ui.jsx';
-import { TESTIMONIALS } from '../data/content.js';
+import { SectionHead } from './ui.jsx';
+import ReviewsSlider from './ReviewsSlider.jsx';
+import { REVIEWS } from '../data/reviews.js';
 
 export default function Testimonials() {
   return (
-    <section className="testimonials" aria-labelledby="testimonials-heading">
+    <section className="reviews-list" aria-label="What Traders Say">
       <div className="container">
-        <div className="section-head" data-reveal>
-          <Eyebrow>What we aim for</Eyebrow>
-          <h2 className="h2" id="testimonials-heading">The experience we're building toward</h2>
-          <p className="section-sub">
-            Three qualities at the heart of the platform, shown as illustrative examples, not
-            real customer endorsements.
-          </p>
-        </div>
-
-        <div className="testimonials__grid">
-          {TESTIMONIALS.map((item) => (
-            <figure className="testimonial" data-reveal key={item.label}>
-              <blockquote className="testimonial__quote">“{item.quote}”</blockquote>
-              <figcaption className="testimonial__meta">
-                <span className="testimonial__label">{item.label}</span>
-                <span className="testimonial__note">Illustrative example, not a real customer</span>
-              </figcaption>
-            </figure>
-          ))}
+        <div className="reviews-list__grid">
+          <div className="reviews-list__copy">
+            <SectionHead
+              eyebrow="Traders"
+              title="What Traders Say"
+              sub="What users told us about the trading workspace, the research tools and the support they received."
+            />
+          </div>
+          <div className="reviews-list__slider">
+            <ReviewsSlider reviews={REVIEWS} />
+          </div>
         </div>
       </div>
     </section>

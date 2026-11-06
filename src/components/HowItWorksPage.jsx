@@ -71,7 +71,7 @@ const PROCESS_QUESTIONS = [
   },
   {
     q: 'Do I Need to Add Funds?',
-    a: "No. Ausie Trader AI is a research platform, not a brokerage. We don't ask for card details or wallet keys, and we don't hold or manage funds.",
+    a: "No. Trader AI is a research platform, not a brokerage. We don't ask for card details or wallet keys, and we don't hold or manage funds.",
   },
   {
     q: 'Do I Need Trading Experience?',

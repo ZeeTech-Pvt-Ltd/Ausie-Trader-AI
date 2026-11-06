@@ -24,7 +24,7 @@ export default function ReviewsSlider({ reviews }) {
   const goTo = (next) => setIndex(((next % count) + count) % count)
 
   return (
-    <div className="slider" role="region" aria-roledescription="carousel" aria-label="Reviews from Ausie Trader AI users">
+    <div className="slider" role="region" aria-roledescription="carousel" aria-label="Reviews from Trader AI users">
       <div className="slider__viewport" aria-live="polite">
         <div className="slider__track" style={{ transform: `translateX(-${index * 100}%)` }}>
           {reviews.map((review, i) => (
