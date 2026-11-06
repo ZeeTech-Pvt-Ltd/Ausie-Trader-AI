@@ -30,7 +30,7 @@ export default function Footer() {
 
           <div className="footer__col">
             <h3 className="footer__heading">Get In Touch</h3>
-            <a href={`mailto:${CONTACT_INFO.email}`}>Email Support</a>
+            <a href={`mailto:${CONTACT_INFO.email}`}>{CONTACT_INFO.email}</a>
             <span className="footer__line">{CONTACT_INFO.location}</span>
             <span className="footer__line">{CONTACT_INFO.hours}</span>
           </div>

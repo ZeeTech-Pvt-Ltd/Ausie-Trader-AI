@@ -13,7 +13,7 @@ export const NAV_LINKS = [
 export const CONTACT_INFO = {
   email: 'support@ausietraderai.com',
   location: 'Global',
-  hours: 'Monday to Friday',
+  hours: 'Monday to Friday, 9am to 5pm AEST',
 };
 
 export const WHY_POINTS = [
