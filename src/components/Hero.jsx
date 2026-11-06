@@ -2,9 +2,9 @@ import { Button, ArrowIcon } from './ui.jsx';
 import { HeroPreload } from './PreloadResources.jsx';
 
 const META = [
-  { value: 'Global', label: 'Audience' },
-  { value: 'Research', label: 'Focused' },
-  { value: 'You', label: 'In Control' },
+  { value: '60+', label: 'Assets Tracked' },
+  { value: '24/7', label: 'Access' },
+  { value: '6+', label: 'Core Tools' },
 ];
 
 export default function Hero() {
