@@ -16,7 +16,7 @@ const WIDGET_CONFIG = {
     },
   ],
   width: '100%',
-  height: 300,
+  height: 240,
   locale: 'en',
   colorTheme: 'light',
   isTransparent: true,
@@ -60,10 +60,6 @@ export default function LiveMarkets() {
       </div>
 
       <div className="showcase__live-widget" ref={containerRef} />
-
-      <p className="showcase__live-note">
-        Reference prices only. Not a trading signal or financial advice.
-      </p>
     </div>
   )
 }
