@@ -6,7 +6,9 @@
 // Every description is under 155 characters and ends with a call to action.
 
 export const SITE_URL = 'https://ausietraderai.com';
-export const OG_IMAGE = `${SITE_URL}/og-image.png`;
+// The version query forces social crawlers to fetch the current artwork
+// instead of serving a cached copy of the old "Australia" OG image.
+export const OG_IMAGE = `${SITE_URL}/og-image.png?v=2`;
 
 export const SEO = {
   '/': {
