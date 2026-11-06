@@ -31,8 +31,8 @@ export default function Hero() {
           </h1>
 
           <p className="hero__lead" data-hero="lead">
-            Markets are noisy. Trader AI helps you slow down, study the chart and test an idea
-            before you act.
+            Trader AI brings market information and AI powered analysis together in one platform,
+            helping you understand market trends and evaluate opportunities with greater clarity.
           </p>
 
           <div className="hero__cta" data-hero="cta">

@@ -51,6 +51,7 @@ export default function ReviewsSlider({ reviews }) {
                   />
                   <div>
                     <b>{review.name}</b>
+                    <span>Trader AI user</span>
                   </div>
                 </div>
               </article>

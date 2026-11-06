@@ -40,10 +40,11 @@ export default function PrivacyPage() {
               browser's privacy settings.
             </p>
             <p>
-              The live reference prices in the Market Workspace section come from CoinGecko. When
-              that section loads, your browser sends a request to CoinGecko, which receives your IP
-              address. We use the response only to display the prices, and we do not send your
-              contact details.
+              The live reference prices in the Market Workspace section are provided by TradingView.
+              When that section loads, your browser requests data from TradingView, which receives
+              your IP address and may use cookies or similar storage as part of the widget. We use
+              the data only to display prices, and we do not send your contact details. TradingView
+              applies its own privacy policy to the widget.
             </p>
 
             <h2>4. What we do not do</h2>

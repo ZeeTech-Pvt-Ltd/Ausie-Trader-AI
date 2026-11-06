@@ -352,7 +352,7 @@ export const FAQS = [
   },
   {
     q: 'Is Real Time Market Data Available?',
-    a: 'Yes. The Market Workspace section shows live reference prices from CoinGecko when you load the page. Those prices are for reference only, not a trading signal. Inside your account, the data available depends on your workspace and should be confirmed before you rely on it.',
+    a: 'Yes. The Market Workspace section shows live reference prices from TradingView when you load the page. Those prices are for reference only, not a trading signal. Inside your account, the data available depends on your workspace and should be confirmed before you rely on it.',
   },
   {
     q: 'Is Trader AI Suitable for Beginners?',
@@ -367,9 +367,7 @@ export const FOOTER_COLS = [
       { label: 'Home', to: '/' },
       { label: 'How It Works', to: '/how-it-works' },
       { label: 'Reviews', to: '/reviews' },
-      { label: 'About Us', to: '/about' },
       { label: 'FAQ', to: '/faq' },
-      { label: 'Contact', to: '/contact' },
     ],
   },
   {

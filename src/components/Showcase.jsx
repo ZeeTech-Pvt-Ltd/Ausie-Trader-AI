@@ -10,8 +10,7 @@ export default function Showcase() {
             <Eyebrow>Market Workspace</Eyebrow>
             <h2 className="h2" id="showcase-heading">Live Market Data</h2>
             <p className="section-sub">
-              Reference prices from CoinGecko for four major assets, refreshed when you load the
-              page.
+              Live reference prices from TradingView for four major assets.
             </p>
           </div>
 

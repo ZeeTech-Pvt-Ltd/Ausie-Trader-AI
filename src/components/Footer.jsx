@@ -32,8 +32,6 @@ export default function Footer() {
             <Link href="/about">About Us</Link>
             <Link href="/contact">Contact Us</Link>
             <a href={`mailto:${CONTACT_INFO.email}`}>{CONTACT_INFO.email}</a>
-            <span className="footer__line">{CONTACT_INFO.location}</span>
-            <span className="footer__line">{CONTACT_INFO.hours}</span>
           </div>
         </div>
 
