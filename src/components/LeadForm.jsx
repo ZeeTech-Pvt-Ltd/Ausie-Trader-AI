@@ -8,7 +8,7 @@ export default function LeadForm() {
       <div className="container">
         <div className="join__grid">
           <div className="join__copy" data-reveal>
-            <Eyebrow>Get Started</Eyebrow>
+            <Eyebrow>Registration</Eyebrow>
             <h2 className="h2" id="join-heading">Get Started With Trader AI</h2>
             <p className="section-sub">
               Registration is quick and secure. Tell us who you are and we'll set up a workspace

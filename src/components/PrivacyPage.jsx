@@ -12,7 +12,7 @@ export default function PrivacyPage() {
       <section className="legal">
         <div className="container">
           <div className="legal__body" data-reveal>
-            <p className="legal__updated">Last updated: September 2026</p>
+            <p className="legal__updated">Last updated: November 2026</p>
 
             <h2>1. Information we collect</h2>
             <p>
@@ -28,7 +28,7 @@ export default function PrivacyPage() {
               requested.
             </p>
 
-            <h2>3. Analytics</h2>
+            <h2>3. Analytics and market data</h2>
             <p>
               We use Google Analytics 4 to understand how people use the site. It records which
               pages are visited, how long people stay, the approximate location of the visit and the
@@ -38,6 +38,12 @@ export default function PrivacyPage() {
               Google Analytics uses cookies and similar storage. We do not use advertising pixels,
               and we do not sell this data. You can block analytics with a browser extension or your
               browser's privacy settings.
+            </p>
+            <p>
+              The live reference prices in the Market Workspace section come from CoinGecko. When
+              that section loads, your browser sends a request to CoinGecko, which receives your IP
+              address. We use the response only to display the prices, and we do not send your
+              contact details.
             </p>
 
             <h2>4. What we do not do</h2>

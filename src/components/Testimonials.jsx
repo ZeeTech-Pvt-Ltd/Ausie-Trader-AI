@@ -9,7 +9,7 @@ export default function Testimonials() {
         <div className="reviews-list__grid">
           <div className="reviews-list__copy">
             <SectionHead
-              eyebrow="Traders"
+              eyebrow="Reviews"
               title="What Traders Say"
               sub="What users told us about the trading workspace, the research tools and the support they received."
             />

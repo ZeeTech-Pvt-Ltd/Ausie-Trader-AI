@@ -352,7 +352,7 @@ export const FAQS = [
   },
   {
     q: 'Is Real Time Market Data Available?',
-    a: 'The market preview shown on this website is illustrative demo data, not a live market feed. Live data availability depends on your workspace and should be confirmed before you rely on it.',
+    a: 'Yes. The Market Workspace section shows live reference prices from CoinGecko when you load the page. Those prices are for reference only, not a trading signal. Inside your account, the data available depends on your workspace and should be confirmed before you rely on it.',
   },
   {
     q: 'Is Trader AI Suitable for Beginners?',

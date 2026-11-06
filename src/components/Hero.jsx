@@ -22,7 +22,7 @@ export default function Hero() {
         <div className="hero__copy">
           <p className="eyebrow eyebrow--light" data-hero="eyebrow">
             <span className="eyebrow__dot" aria-hidden="true" />
-            AI Powered Trading Analysis
+            Research Before You Act
           </p>
 
           <h1 className="hero__title">
@@ -31,10 +31,8 @@ export default function Hero() {
           </h1>
 
           <p className="hero__lead" data-hero="lead">
-            Trader AI brings intelligent trading tools, AI powered chart analysis, strategy
-            backtesting, paper trading and real time market insights together in one platform.
-            Analyze market trends, explore trading strategies, monitor price movements and make
-            more informed trading decisions with advanced AI assisted tools.
+            Markets are noisy. Trader AI helps you slow down, study the chart and test an idea
+            before you act.
           </p>
 
           <div className="hero__cta" data-hero="cta">

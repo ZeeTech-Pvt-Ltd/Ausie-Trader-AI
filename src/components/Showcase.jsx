@@ -1,4 +1,5 @@
 import { Eyebrow } from './ui.jsx';
+import LiveMarkets from './LiveMarkets.jsx';
 
 export default function Showcase() {
   return (
@@ -9,8 +10,8 @@ export default function Showcase() {
             <Eyebrow>Market Workspace</Eyebrow>
             <h2 className="h2" id="showcase-heading">Live Market Data</h2>
             <p className="section-sub">
-              Explore market prices, charts and price movements in one workspace. The preview shown
-              here is illustrative demo data, not a live market feed.
+              Live reference prices for four major assets, refreshed when you load the page. The
+              workspace image is illustrative demo data, not a live trading account.
             </p>
           </div>
 
@@ -27,6 +28,8 @@ export default function Showcase() {
             />
           </figure>
         </div>
+
+        <LiveMarkets />
       </div>
     </section>
   );

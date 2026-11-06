@@ -54,12 +54,12 @@ export default function Features() {
       <div className="container">
         <div className="section-head section-head--split" data-reveal>
           <div>
-            <Eyebrow>Trading Tools</Eyebrow>
+            <Eyebrow>Research Toolkit</Eyebrow>
             <h2 className="h2" id="features-heading">Powerful Trading Features</h2>
           </div>
           <p className="section-sub">
-            Six tools for chart analysis, strategy testing, simulated practice and market
-            monitoring, all in one workspace.
+            Six tools, each built for a specific research job. Use them together or open the one
+            you need.
           </p>
         </div>
 
