@@ -25,7 +25,7 @@ export default function ContactPage() {
               <ul className="contact__list">
                 <li>
                   <span>Email us</span>
-                  <a href={`mailto:${CONTACT_INFO.email}`}>Email</a>
+                  <a href={`mailto:${CONTACT_INFO.email}`}>{CONTACT_INFO.email}</a>
                 </li>
                 <li>
                   <span>Support hours</span>
