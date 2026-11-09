@@ -148,7 +148,7 @@ export default function ReviewsPage() {
 
       <section className="faq-cta" aria-labelledby="share-heading">
         <div className="container">
-          <div className="faq-cta__card" data-reveal>
+          <div className="faq-cta__card faq-cta__card--brand" data-reveal>
             <h2 id="share-heading">Share Your Experience</h2>
             <p>
               Used the platform? Tell us what worked and what didn't. Your feedback helps us decide
