@@ -22,7 +22,7 @@ export default function Hero() {
         <div className="hero__copy">
           <p className="eyebrow eyebrow--light" data-hero="eyebrow">
             <span className="eyebrow__dot" aria-hidden="true" />
-            Research Before You Act
+            AI Powered Market Research
           </p>
 
           <h1 className="hero__title">
