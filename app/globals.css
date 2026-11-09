@@ -813,10 +813,6 @@ p { margin: 0; }
 .faq-cta__card--brand .btn--outline { color: #fff; border-color: rgba(255,255,255,0.4); }
 .faq-cta__card--brand .btn--outline:hover { background: rgba(255,255,255,0.1); }
 
-.contact__risk { margin-top: 32px; padding: 20px 22px; background: var(--light-yellow); border-radius: 16px; border: 1px solid rgba(252,201,16,0.28); }
-.contact__risk h3 { font-size: 16px; margin-bottom: 6px; color: #a87e00; }
-.contact__risk p { font-size: 14px; color: var(--ink-3); }
-
 /* ============================================================
    LEGAL PAGES
    ============================================================ */

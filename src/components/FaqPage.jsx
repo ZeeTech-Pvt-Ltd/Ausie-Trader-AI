@@ -17,7 +17,7 @@ export default function FaqPage() {
 
       <section className="faq-cta">
         <div className="container">
-          <div className="faq-cta__card" data-reveal>
+          <div className="faq-cta__card faq-cta__card--brand" data-reveal>
             <h2>Can't Find Your Answer?</h2>
             <p>
               Send us a message and our team will get back to you during business hours

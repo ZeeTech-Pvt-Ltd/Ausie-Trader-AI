@@ -25,11 +25,7 @@ export default function ContactPage() {
               <ul className="contact__list">
                 <li>
                   <span>Email us</span>
-                  <a href={`mailto:${CONTACT_INFO.email}`}>Email Support</a>
-                </li>
-                <li>
-                  <span>Location</span>
-                  <b>{CONTACT_INFO.location}</b>
+                  <a href={`mailto:${CONTACT_INFO.email}`}>Email</a>
                 </li>
                 <li>
                   <span>Support hours</span>
@@ -40,15 +36,6 @@ export default function ContactPage() {
                 If you're after a quick answer, our <Link href="/faq">FAQ page</Link> covers the most
                 common questions.
               </p>
-
-              <div className="contact__risk" data-reveal>
-                <h3>Risk disclosure</h3>
-                <p>
-                  Financial markets involve risk. Information on this website is general in nature
-                  and does not constitute personal financial advice. All examples shown are
-                  illustrative only.
-                </p>
-              </div>
             </div>
 
             <div className="contact__form" data-reveal>
